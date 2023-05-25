@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stack Overflow</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Roboto+Serif&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="payBills.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="payBills.js" defer></script>
+    <script src="script.js" defer></script>
+
+  </head>
+  <body>
+    
+    <header>
+      <div class="navBar">
+          <div class="navImg">
+              <img src="resources/imgs/bakery-light-1.png" class="navImg" alt="">
+          </div>
+          <nav>
+              <div class="navList">
+                  <ul>
+                      <li><a href="" class="roboto">Home</a></li>
+                      <li><a href="" class="roboto">Announcments</a></li>
+                      <li><a href="" class="roboto">Manage Profile</a></li>
+                      <li><a href="" class="roboto">Logout</a></li>
+                  </ul>
+              </div>
+              <div class="clr"></div>
+          </nav>
+      </div>
+  </header>
+
+    <br><br><br><br><br><br>
+    <Div class="introduction width40">
+        <h1 class="h1">Here Are Your Bills Details</h1>
+    </Div>
+    <div class="wrapper">
+      <div class="left-align box">
+        <div class="center5"><img src="resources/imgs/icons/gasIcon.png" alt="..."></div>
+        <br>
+        <h3 class="h3">Gas Bill</h3>
+        <hr class="line">
+        <p>Invoice Number: 123456789</p>
+        <p>Billing Period: January 2023</p>
+        <p>Meter Number: GAS-987654321</p>
+        <p>Usage Details:</p>
+        <p class = "center">> Previous Reading: 5000 cubic feet</p>
+        <p class = "center">> Current Reading: 5250 cubic feet</p>
+        <p class = "center">> Total Usage: 250 cubic feet</p>
+        <br>
+        <p>Rate: $0.10 per cubic foot</p>
+        <p>Total Amount: $25.00</p>
+        <p>Due Date: February 15, 2023</p>
+    
+        <div class = "center5">
+            <div id="paymentOptions">
+                <input type="radio" name="paymentMethod" id="thirdParty1" value="thirdParty1">
+                <label class="color5" for="thirdParty1">Pay through Third Party:</label>
+                
+                <input type="radio" name="paymentMethod" id="bank1" value="bank1">
+                <label class="color5" for="bank1">Pay through Bank:</label>
+                <br>
+                <button type="button" class="btn btn-outline-warning" id="payButton1">Pay Now</button>
+              </div>
+        </div>
+      </div>
+      
+      <div class="left-align box">
+        <div class="center5"><img src="resources/imgs/icons/waterIcon.png"  alt="..."></div>
+        <br>
+        <p class="h3">Water Bill</p>
+        <hr class="line">
+        <p>Account Number: 123456789</p>
+        <p>Billing Period: March 2023</p>
+        <p>Meter Number: WTR-987654321</p>
+        <p>Usage Details:</p>
+        <p class="center">> Previous Reading: 500 gallons</p>
+        <p class="center">> Current Reading: 550 gallons</p>
+        <p class="center">> Total Usage: 50 gallons</p>
+        <br>
+        <p>Rate: $0.05 per gallon</p>
+        <p>Total Amount: $2.50</p>
+        <p>Due Date: April 10, 2023</p>
+      
+        <div class = "center5">
+            <div id="paymentOptions">
+                <input type="radio" name="paymentMethod" id="thirdParty2" value="thirdParty2">
+                <label class="color5" for="thirdParty">Pay through Third Party:</label>
+                
+                <input type="radio" name="paymentMethod" id="bank2" value="bank2">
+                <label class="color5" for="bank2">Pay through Bank:</label>
+                <br>
+                <button type="button" class="btn btn-outline-warning" id="payButton2">Pay Now</button>
+              </div>
+        </div>
+    </div>
+      
+        <div class="left-align box">
+            <div class="center5"><img src="resources/imgs/icons/electricityIcon.png"  alt="..."></div>
+            <br>
+            <p class="h3">Electricity Bill</p>
+            <hr class="line">
+            <p>Account Number: 9876543210</p>
+            <p>Billing Period: May 2023</p>
+            <p>Meter Number: ELE-1234567890</p>
+            <p>Usage Details:</p>
+            <p class="center">> Previous Reading: 500 kWh</p>
+            <p class="center">> Current Reading: 550 kWh</p>
+            <p class="center">> Total Usage: 50 kWh</p>
+            <br>
+            <p>Rate: $0.15 per kWh</p>
+            <p>Total Amount: $7.50</p>
+            <p>Due Date: June 10, 2023</p>
+              
+            <div class = "center5">
+                <div id="paymentOptions">
+                    <input type="radio" name="paymentMethod" id="thirdParty3" value="thirdParty3">
+                    <label class="color5" for="thirdParty3">Pay through Third Party:</label>
+                    
+                    <input type="radio" name="paymentMethod" id="bank3" value="bank3">
+                    <label class="color5" for="bank3">Pay through Bank:</label>
+                    <br>
+                    <button type="button" class="btn btn-outline-warning" id="payButton3">Pay Now</button>
+                  </div>
+            </div>
+          </div>
+        
+      <div class="clearfix"></div>
+    </div>
+
+<div class="wrapper">
+  <div class="left-align box">
+    <div class="center5"><img src="resources/imgs/icons/telephoneIcon.png"  alt="..."></div>
+    <br>
+    <p class="h3">Telephone Bill</p>
+    <hr class="line">
+
+    <p>Account Number: 987654321</p>
+    <p>Billing Period: February 2023</p>
+    <p>Phone Number: (555) 123-4567</p>
+    <p>Usage Details:</p>
+    <p class="center">> Local Calls: 100 minutes</p>
+    <p class="center">> Long Distance Calls: 50 minutes</p>
+    <p class="center">> International Calls: 10 minutes</p>
+    <br>
+    <p>International Call Rate: $0.50 per minute</p>
+    <p>Total Amount: $27.50</p>
+    <p>Due Date: March 15, 2023</p>
+      
+    <div class = "center5">
+        <div id="paymentOptions">
+            <input type="radio" name="paymentMethod" id="thirdParty4" value="thirdParty4">
+            <label class="color5" for="thirdParty4">Pay through Third Party:</label>
+            
+            <input type="radio" name="paymentMethod" id="bank4" value="bank4">
+            <label class="color5" for="bank4">Pay through Bank:</label>
+            <br>
+            <button type="button" class="btn btn-outline-warning" id="payButton4">Pay Now</button>
+          </div>
+    </div>
+  </div>
+
+  <div class="left-align box">
+    <div class="center5"><img src="resources/imgs/icons/internetIcon.png"  alt="..."></div>
+    <br>
+    <p class="h3">Internet Bill</p>
+    <hr class="line">
+
+    <p>Account Number: 1234567890</p>
+    <p>Billing Period: June 2023</p>
+    <p>Package: High-Speed Internet Plus</p>
+    <!-- <p>Speed: 100 Mbps</p> -->
+    <p>Monthly Fee: $50.00</p>
+    <p>Additional Services:</p>
+    <p class="center">> Premium Wi-Fi: $10.00</p>
+    <p class="center">> VoIP Phone Service: $20.00</p>
+    <br>
+    <p>Total Amount: $80.00</p>
+    <p>Due Date: July 5, 2023</p>
+      
+    <div class = "center5">
+        <div id="paymentOptions">
+            <input type="radio" name="paymentMethod" id="thirdParty5" value="thirdParty5">
+            <label class="color5" for="thirdParty5">Pay through Third Party:</label>
+            
+            <input type="radio" name="paymentMethod" id="bank5" value="bank5">
+            <label class="color5" for="bank5">Pay through Bank:</label>
+            <br>
+            <button type="button" class="btn btn-outline-warning" id="payButton5">Pay Now</button>
+          </div>
+    </div>
+    </div>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+<footer>
+  <div class="final">
+      <div class="finalTop">
+          <div class="center">
+              <div class="row">
+                  <h4>About us</h4>
+                  <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                      consectetur.
+                      I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                      consectetur.
+                      <br><br>
+                      We are the champions! We are the most amazing theme of all time, yeah.
+                  </p>
+              </div>
+              <div class="row">
+                  <h4>Facing an issue?</h4>
+                  <ul class="iconlist">
+                      <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                          <a href="">
+                              Report a problem
+                          </a>
+                      </li>
+                      <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                          <a href="">
+                              Chat with a representive
+                          </a>
+                      </li>
+                      <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                          <a href="">
+                              Message us on Social media
+                          </a>
+                      </li>
+                      <li class="icons2 lastEl"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                          <a href="">
+                              Contact us
+
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="row">
+                  <h4>Opening Hours</h4>
+                  <ul class="iconlist">
+                      <li class="icons2">
+                          <p>Monday 10AM - 9PM</p>
+                      </li>
+                      <li class="icons2">
+                          <p>Tuesday 10AM - 9PM</p>
+                      </li>
+                      <li class="icons2">
+                          <p>Wednesday 10AM - 9PM</p>
+                      </li>
+                      <li class="icons2">
+                          <p>Thursday 10AM - 10PM</p>
+                      </li>
+                      <li class="icons2">
+                          <p>Friday 10AM - 10PM</p>
+                      </li>
+                      <li class="icons2 lastEl">
+                          <p>Weekends 10AM - 11PM</p>
+                      </li>
+                  </ul>
+              </div>
+              <div class="row backimage">
+                  <h4>Contact Details
+                  </h4>
+                  <ul class="iconlist">
+                      <li class="icons3"><img src="resources/imgs/Icons/location.png" alt="location icon" ;>
+                          <p>Manchester Road 123-78B</p>
+                      </li>
+                      <li class="icons3"><img src="resources/imgs/Icons/phone-gray.png" alt="phone icon">
+                          <p>+46 123 456 789</p>
+                      </li>
+                      <li class="icons3"><img src="resources/imgs/Icons/email-solid.png" alt="email icon">
+                          <p>hello@sitename.com</p>
+                      </li>
+                      <li class="icons3 lastEl"><img src="resources/imgs/Icons/earth.png" alt="earth icon">
+                          <p>http://www.sitename.com</p>
+                      </li>
+                  </ul>
+              </div>
+              <div class="clear"></div>
+
+          </div>
+
+      </div>
+      <div class="FinalBottom">
+          <div class="center2">
+              <div><img src="resources/imgs/bakery-light-1.png" alt="image of logo of website">
+              </div>
+              <div>
+                  <p>Copyright 2017. All rights reserved.
+                  </p>
+              </div>
+              <div class="exter_logos">
+                  <a href=""><img src="resources/imgs/Icons/facebook.png" alt="facebook logo"></a>
+                  <a href=""><img src="resources/imgs/Icons/google.png" alt="Google logo"></a>
+                  <a href=""><img src="resources/imgs/Icons/linkedin.png" alt="Linked-in Logo"></a>
+                  <a href=""><img src="resources/imgs/Icons/twitter.png" alt="Twitter logo"></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.h1{
+    text-align: center;
+    color: #cbb26a;
+    font-family: 'Roboto ', serif;
+  }
+
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+/* 
+  .table-bordered{
+
+  } */
+
+   .custom-table {
+    border: 2px solid #ededed;
+    font-family: 'Roboto ', serif;
+    text-align: center;
+  }
