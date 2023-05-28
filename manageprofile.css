@@ -228,73 +228,91 @@ header {
   width: 100%;
 }
 .allInfo {
-  float: left;
   padding: 20 50 0;
-  width: 70%;
+  width: 100%;
 }
 .infoPartition {
-  float: left;
-  padding: 30;
-  width: 25%;
+  text-align: left;
+  padding: 30 25;
+  width: 100%;
 }
 .infoPartition h4 {
   font-family: "Roboto Serif";
   font-style: normal;
-  font-size: 16px;
+  font-size: 23px;
   font-weight: bold;
   color: #cbb26a;
-  padding: 10;
 }
+.infoPartitionText{
+  float: left;
+}
+.infoPartitionButt{
+  float: right;
+}
+.infoPartitionButt button{
+  padding: 20px;
+  width: 200;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 400;
+  
+}
+
 
 /* Acount Details END */
 
-/* Possible Actions Start */
-.PossibleActions {
-  width: 90%;
-  margin: 20 auto;
-}
-.doable {
-  background-color: #ededed;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border: 2px solid #cbb26a;
-  border-radius: 35px;
-  float: left;
-  width: 14.2%;
-  height: 150px;
-  margin: 40 20 60 20;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-}
-.doable a {
-  text-decoration: none;
-  color: black;
-}
-.innerIcon {
-  width: 40%;
+
+/* close account start */
+.closeAccount{
+  width: 80%;
   margin: auto;
+  text-align: center;
+  padding: 40px;
 }
-.doable img {
-  width: 100%;
-  padding: 15px;
-}
-.innerContainer {
-  margin-top: 10px;
-}
-.doable p {
+.close_text{
+  margin: auto;
+  width: 90%;
+  padding-bottom: 40px;
   font-family: "Roboto Serif";
   font-style: normal;
-  font-size: 15px;
+  font-size: 25px;
+  font-weight: 400;
+  color:red;
 }
-.doableContainer {
-  width: 100%;
-  margin: 0 0 0 0;
+.warning{
+  padding-top: 25px;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  color:red;
+  display: hidden;
 }
-
-.doable:hover {
-  transform: translate(15px, 15px);
+.black{
+  color: black;
+  padding-top: 25px;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
 }
-
-/* Possible Actions END */
+.close_button  button{
+  width: 250;
+  padding: 25px;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  color: red;
+  opacity: 60%;
+  display: hidden;
+  border: 1px black solid;
+}
+.close_button  button:hover{
+  opacity: 1;
+  cursor: pointer;
+}
 
 /* Body End */
 
@@ -462,7 +480,7 @@ header {
 } */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .doable {
     width: 100%;
   }
@@ -476,10 +494,10 @@ header {
   .AccountDetails .img {
     width: 100%;
   }
-}
+} */
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .doable {
     width: 50%;
   }
@@ -493,10 +511,10 @@ header {
   .AccountDetails .img {
     width: 50%;
   }
-}
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* @media only screen and (min-width: 992px) {
   .doable {
     width: 50%;
   }
@@ -513,10 +531,10 @@ header {
   .row {
     width: 10%;
   }
-}
+} */
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
   .doable {
     width: 25%;
   }
@@ -562,5 +580,5 @@ header {
   }
   .row {
     width: 22%;
-  }
-}
+  } */
+/* } */

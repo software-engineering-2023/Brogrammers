@@ -4,8 +4,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Roboto+Serif&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="client.css">
-    <script src="clientHomepage.js" defer></script>
+    <link rel="stylesheet" href="manageprofile.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -29,158 +29,89 @@
     </header>
     <!--Body Starts here-->
     <div class="container center3">
-        <Div class="introduction width40">
-            <h1>Welcome to your Profile</h1>
-        </Div>
-        <Div class="accountPicker width30">
-            <div class="skew Effect">
-            </div>
-            <div class="accInner" data-dropdown>
-                <button class="link" data-dropdown-button>Choose An Account</button>
-                <div class="DropMenu">
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Personal Account</p>
-                        </a>
-
-                    </div>
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Savings Account</p>
-                        </a>
-
-                    </div>
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Investments Account</p>
-                        </a>
-
-                    </div>
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Money market Account</p>
-                        </a>
-                    </div>
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Retirment Account</p>
-                        </a>
-
-                    </div>
-                </div>
-                <div class="dropDown">
-                </div>
-            </div>
-        </Div>
         <div class="AccountDetails">
-            <div class="img">
-                <img src="resources/imgs/Graph.png" alt="Graph of account details">
-            </div>
             <div class="allInfo">
                 <div class="infoPartition">
                     <h4>Account Number:</h4>
                     <p>364794133486112</p>
                 </div>
                 <div class="infoPartition">
-                    <h4>Account Type:</h4>
-                    <p>Personal Account</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Associated Phone:</h4>
-                    <p>01222235455</p>
-                </div>
-                <div class="infoPartition">
                     <h4>Account Iban:</h4>
                     <p>36B7F4133486LMNO2</p>
                 </div>
                 <div class="infoPartition">
-                    <h4>Total Balance:</h4>
-                    <p>3,500,000</p>
+                    <h4>Account Type:</h4>
+                    <p>Personal Account</p>
                 </div>
                 <div class="infoPartition">
-                    <h4>Available Balance:</h4>
-                    <p>2,000,000</p>
+                    <div class="infoPartitionText">
+                        <h4>Associated Name:</h4>
+                        <p>Bill Nye the Science Guy</p>
+                    </div>
+                    <div class="infoPartitionbutt">
+                        <button>Change Name</button>
+                    </div>
+                    <div class="clr"></div>
                 </div>
                 <div class="infoPartition">
-                    <h4>Certificates:</h4>
-                    <p>1,500,000</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Account Currency:</h4>
-                    <p>EGP / LE</p>
+                    <div class="infoPartitionText">
+                        <h4>Associated Phone:</h4>
+                        <p>01222235455</p>
+                    </div>
+                    <div class="infoPartitionbutt">
+                        <button>Change Phone number</button>
+                    </div>
+                    <div class="clr"></div>
                 </div>
 
-                <div class="clr"></div>
+                <div class="infoPartition">
+                    <div class="infoPartitionText">
+                        <h4>Associated Address:</h4>
+                        <p> Manchester Road 123-78B</p>
+                    </div>
+                    <div class="infoPartitionbutt">
+                        <button>Change Address</button>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="infoPartition">
+                    <div class="infoPartitionText">
+                        <h4>Associated SSN:</h4>
+                        <p>359**************23</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="infoPartition">
+                    <div class="infoPartitionText">
+                        <h4>Date Created:</h4>
+                        <p>2015/13/23</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="infoPartition">
+                    <div class="infoPartitionText">
+                        <h4>Brance Responsible for account:</h4>
+                        <p>Manchester Road 123-78B</p>
+                    </div>
+                    <div class="clr"></div>
+                </div>
             </div>
             <div class="clr"></div>
         </div>
-
-        <Div class="PossibleActions">
-            <div class="doableContainer">
-                <div class="doable ">
-                    <a href="">
-                        <div class="innerContainer ">
-                            <div class="innerIcon "><img src="resources/imgs/icons/Bills.png" alt="">
-                                <p>Pay bills</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/Transactions.png" alt="">
-                                <p>View Transactions</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/CreditCard.png">
-                                <p>View Credit Cards</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/Transfers.png" alt="">
-                                <p>Transfer Money</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/loan.png" alt="">
-                                <p>View Loans</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/Certificate.png" alt="">
-                                <p>View Certificates</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="clr"></div>
-            </div>
+    </div>
+    <div class="closeAccount">
+        <div class="close_text">
+            <h2>Want to close your account</h2>
+            <p class="warning">ARE YOU CERTAIN YOU WANT TO SUBMIT A REQUEST TO CLOSE THE ACCOUNT?
+            </p>
+            <p class="black"> All your details and saved data will be deleted. Money remaining can be withdrawn or will
+                be transfered to the desired account.</p>
         </div>
-
-
-    </Div>
-
-
+        <div class="close_button">
+            <button>REQUEST TO CLOSE ACCOUNT</button>
+        </div>
+    </div>
+    <!-- Footer Starts here -->
     </div>
     <footer>
         <div class="final">

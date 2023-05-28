@@ -1,0 +1,956 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clr {
+  clear: both;
+}
+.clear {
+  clear: both;
+}
+/* Nav Bar Start */
+
+/* body {
+    height: 300vh;
+  } */
+
+header {
+  background: #52c234; /* fallback for old browsers */
+
+  background: linear-gradient(
+    to right,
+    #12370f,
+    #1f5f1a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 70;
+  z-index: 50000;
+}
+
+.navBar {
+  width: 80%;
+  margin: auto;
+}
+.navBar ul {
+  list-style-type: none;
+}
+
+.navImg {
+  width: 183;
+  float: left;
+  padding: 10px 0 0 0;
+  height: 80px;
+}
+.navImg img {
+  width: 100%;
+}
+
+.navList {
+  float: right;
+}
+.navList li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.navList a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 60px;
+  box-sizing: border-box;
+  padding: 20;
+}
+.navList a:hover {
+  color: #cbb26a;
+}
+/* Nav Bar End */
+
+/* Start Of Body */
+
+/* Drop menu and Welcome */
+.center3 {
+  width: 95%;
+  margin: auto;
+}
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+.width40 {
+  width: 40%;
+  margin: auto;
+  padding: 10;
+}
+
+.introduction h1 {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 30px;
+  color: #cbb26a;
+}
+
+.accountPicker {
+  position: relative;
+}
+
+.width30 {
+  width: 30%;
+  margin: 20 auto;
+  padding: 10;
+}
+.skew {
+  width: 100%;
+  background-color: #ededed;
+  transform: skew(-30deg);
+  height: 60px;
+}
+.Effect {
+  transition: all 0.3s ease;
+}
+.accountPicker:hover .Effect {
+  background-color: #cbb26a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.accountPicker:hover .dropDown {
+  border-top: 30px solid #ededed;
+}
+.accInner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 0;
+}
+.accInner button {
+  width: 100%;
+  height: 60px;
+  background: none;
+  border: none;
+  text-align: left;
+  margin-top: 10;
+  padding-left: 25;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.accInner button:hover {
+  cursor: pointer;
+}
+.accType a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 100%;
+}
+.accType p {
+  padding-top: 10;
+}
+.dropDown {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid #cbb26a;
+  position: absolute;
+  right: 70;
+  top: 30;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+.DropMenu {
+  position: relative;
+  top: calc(100% + 0.25 rem);
+  width: 90%;
+  margin: 5 0 5 20;
+  border: 2px solid #cbb26a;
+  background-color: #ededed;
+
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 20px 0 rgb(0, 0, 0, 0.1);
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 150ms ease-in-out;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.accType {
+  background-color: #ededed;
+  height: 39px;
+  padding: 0;
+}
+.accType:hover {
+  background-color: #cbb26a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+.accInner.active > .link + .DropMenu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Drop menu and Welcome END */
+
+/* Acount Details Start */
+.AccountDetails {
+  width: 90%;
+  margin: 0 auto 30;
+
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 50px;
+}
+
+.img {
+  width: 27%;
+  float: left;
+}
+.img img {
+  width: 100%;
+}
+.allInfo {
+  float: left;
+  padding: 20 50 0;
+  width: 70%;
+}
+.infoPartition {
+  float: left;
+  padding: 30;
+  width: 25%;
+}
+.infoPartition h4 {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #cbb26a;
+  padding: 10;
+}
+
+/* Acount Details END */
+
+/* Possible Actions Start */
+.PossibleActions {
+  width: 90%;
+  margin: 20 auto;
+}
+.doable {
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 35px;
+  float: left;
+  width: 14.2%;
+  height: 150px;
+  margin: 40 20 60 20;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.doable a {
+  text-decoration: none;
+  color: black;
+}
+.innerIcon {
+  width: 40%;
+  margin: auto;
+}
+.doable img {
+  width: 100%;
+  padding: 15px;
+}
+.innerContainer {
+  margin-top: 10px;
+  text-align: center;
+}
+.doable p {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 15px;
+}
+.doableContainer {
+  width: 100%;
+  margin: 0 0 0 0;
+}
+
+.doable:hover {
+  transform: translate(15px, 15px);
+}
+
+/* Possible Actions END */
+
+/* Body End */
+
+/* Footer Start */
+/* Final Part of the website */
+.iconlist {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.final {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  width: 100%;
+}
+
+.finalTop {
+  background-color: #12370f;
+  background: linear-gradient(to right, #12370f, #1f5f1a);
+  margin: auto;
+  width: 100%;
+
+  padding: 30 0 5 0;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
+}
+
+.row {
+  width: 22%;
+  float: left;
+  margin: 10 15;
+}
+
+.row h4 {
+  font-family: "Roboto Serif";
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+.row p {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 35;
+  padding-left: 10px;
+  color: #ffffffa5;
+  line-height: 31px;
+}
+
+.icons2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  padding: 5px;
+  margin-bottom: 5;
+}
+
+.icons2 img {
+  margin-top: 6;
+  width: 16px;
+  vertical-align: middle;
+}
+
+.icons2 p {
+  padding-left: 0px;
+  display: inline-block;
+  vertical-align: top;
+  width: fit-content;
+  margin: 0;
+}
+
+.lastEl {
+  border-bottom: none;
+}
+
+.icons3 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 10 0;
+  margin-bottom: 5;
+}
+
+.icons3 img {
+  height: 32px;
+  width: 32px;
+
+  vertical-align: middle;
+}
+
+.icons3 p {
+  padding-left: 0px;
+  display: inline-block;
+  vertical-align: top;
+  width: fit-content;
+  margin: 0;
+}
+.icons2 a {
+  color: #ffffffa5;
+}
+
+.icons2 a:hover {
+  color: #cbb26a;
+}
+/* Final bottom */
+
+.center2 {
+  margin: auto;
+  width: 60%;
+}
+
+.center2 img {
+  margin-bottom: 30;
+  width: 200;
+}
+
+.center2 p {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 10;
+  padding-left: 10px;
+  color: #969696;
+  line-height: 31px;
+}
+
+.FinalBottom {
+  padding: 0 0 15 0;
+  text-align: center;
+  background-color: #050f08;
+  margin: auto;
+  width: 100%;
+  background: linear-gradient(to right, #12370f, #1f5f1a);
+}
+
+.exter_logos img {
+  width: 26px;
+  margin: 0 2.5;
+  background-color: rgb(72, 69, 64);
+  border-radius: 50%;
+}
+.roboto {
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+}
+/* Footer end */
+
+/* /*  */
+/*  */
+/* David's properties */
+/*  */
+/*  */
+
+.navImgPlus {
+  float: left;
+  padding: 5px 0 5px 0;
+}
+
+.flexMe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: fit-content;
+  min-height: 500px;
+  margin: auto;
+  border: #050f08;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@keyframes enterAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.card {
+  width: 30%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 25px;
+  margin: 20px;
+  padding: 5px;
+  min-width: 30%;
+  opacity: 0;
+  animation: enterAnimation 0.3s ease-out forwards;
+}
+
+.card img {
+  width: 90%;
+}
+
+.card h4 {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #cbb26a;
+  padding: 10;
+}
+
+.card p {
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+}
+
+.card button {
+  background-color: #ededed;
+  color: #cbb26a;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  justify-self: flex-start;
+  margin-right: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+}
+
+.card button:hover {
+  background-color: #cbb26a;
+  color: #ededed;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card button:active {
+  /* set time duration to your needs */
+  animation: gradient 1ms;
+  background: #12370f;
+  color: #fff;
+  box-shadow: none;
+}
+
+.skewPlus {
+  background-color: #ededed;
+  transform: skew(-30deg);
+  height: 60px;
+}
+
+.AccountDetailsPlus {
+  width: 90%;
+  margin: 0 auto 30;
+  padding: 1%;
+
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 50px;
+}
+
+.transition,
+ul li i:before,
+ul li i:after,
+p {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn,
+ul li,
+h1 {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select,
+h2 {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.accord {
+  margin-top: 2%;
+  padding: 5%;
+  color: #050f08;
+  height: auto;
+  min-height: 800px;
+  text-align: left;
+}
+
+.accord h1 {
+  font-weight: bold;
+  color: #cbb26a;
+  padding: 10;
+}
+
+.accord p {
+  color: rgba(48, 69, 92, 0.8);
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+}
+
+.accord ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+.accord ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1.5px solid #12370f;
+}
+.accord ul li:nth-of-type(1) {
+  animation-delay: 0.5s;
+}
+.accord ul li:nth-of-type(2) {
+  animation-delay: 0.75s;
+}
+.accord ul li:nth-of-type(3) {
+  animation-delay: 1s;
+}
+.accord ul li:nth-of-type(4) {
+  animation-delay: 1.25s;
+}
+.accord ul li:nth-of-type(5) {
+  animation-delay: 1.5s;
+}
+.accord ul li:last-of-type {
+  padding-bottom: 0;
+}
+.accord ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+.accord ul li i:before,
+ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #1f5f1a;
+  width: 3px;
+  height: 9px;
+}
+.accord ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+.accord ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+.accord ul li input[type="checkbox"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+.accord ul li input[type="checkbox"]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+.accord ul li input[type="checkbox"]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+.accord ul li input[type="checkbox"]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+
+#toggleButton {
+  display: none;
+}
+
+.toggle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10%;
+}
+
+.toggle-label {
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #9e1515;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  /* text-align: justify; */
+  width: 30%;
+  transform: skew(-30deg);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  font-size: 20px;
+
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.toggle-label:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+  background-color: #bb3131;
+}
+
+#toggleButton:checked + .toggle-label {
+  background-color: #cbb26a;
+  color: #fff;
+}
+
+.button-container {
+  display: none;
+}
+
+#toggleButton:checked ~ .button-container {
+  display: block;
+}
+
+.manageables {
+  width: 200px;
+  background-color: #ededed;
+  transform: skew(-30deg);
+  height: 60px;
+  margin: 10px;
+}
+
+.manageables :hover {
+  background-color: #cbb26a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lightUp:hover {
+  background-color: #cbb26a;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/* 
+  .requestForm{
+    margin: 10px  ;
+  
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #ededed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #cbb26a;
+    border-radius: 50px;
+  }
+  
+  .requestForm h1{
+    font-family: "Roboto Serif";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 30px;
+    color: #cbb26a;
+  } */
+
+.requestForm {
+  /* Existing styles */
+  margin: 10px;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 50px;
+}
+
+.requestForm h2 {
+  text-align: center;
+  color: #cbb26a;
+  margin-bottom: 20px;
+}
+
+.requestForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.requestForm .form-group {
+  margin-bottom: 15px;
+}
+
+.requestForm label {
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+.requestForm input[type="text"],
+.requestForm textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #cbb26a;
+  resize: none;
+}
+
+.requestForm button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #cbb26a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.requestForm button:hover {
+  background-color: #a59450;
+}
+.adminStatshead {
+  margin: 100px;
+  padding: 20px;
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 50px;
+  text-align: center;
+}
+.adminStatshead h2 {
+  color: #cbb26a;
+  margin-bottom: 20px;
+}
+.adminStatshead .stats {
+  display: flex;
+  justify-content: space-around;
+}
+.adminStatshead .stat {
+  width: 25%;
+  padding: 10px;
+}
+.adminStatshead .stat-value {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+.adminStatshead .stat-label {
+  display: block;
+  color: #5c5c5c;
+}
+
+.adminStats {
+  margin: 40px;
+  padding: 20px;
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 50px;
+  text-align: center;
+}
+.requests {
+  margin: 20px;
+}
+.titleReq {
+  margin: auto;
+  text-align: center;
+  color: #cbb26a;
+}
+
+.adminStats h2 {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.adminStats .stats {
+  display: flex;
+  justify-content: space-around;
+}
+
+.adminStats .stat {
+  width: 25%;
+  padding: 10px;
+}
+
+.adminStats .stat-value {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+.adminStats .stat-label {
+  display: block;
+  color: #5c5c5c;
+}
+.acceptButton button {
+  margin: 15px;
+  padding: 15 30;
+  color: green;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+.rejectButton button {
+  margin: 15px;
+  padding: 15 30;
+  color: red;
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+}
+button:hover {
+  cursor: pointer;
+}
