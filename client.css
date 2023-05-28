@@ -446,6 +446,17 @@ header {
   font-family: "Roboto Serif", serif;
   font-weight: 400;
 }
+.flexMe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: fit-content;
+  min-height: 500px;
+  margin: auto;
+  border: #050f08;
+  justify-content: center;
+  align-items: flex-start;
+}
 /* Footer end */
 /* Media Queries */
 /* @media only screen and (max-width: 600px) {

@@ -954,3 +954,9 @@ ul li i:after {
 button:hover {
   cursor: pointer;
 }
+.clickable{
+  cursor: pointer;
+}
+.clickable:hover{
+  color: rgba(0, 0, 255, 0.742);
+}
