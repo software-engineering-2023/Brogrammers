@@ -27,189 +27,48 @@
             </nav>
         </div>
     </header>
-    <!--Body Starts here-->
     <div class="container center3">
         <Div class="introduction width40">
-            <h1>Welcome to your Profile</h1>
+            <div style="padding: 30;"></div>
+            <h1>Technical Issues</h1>
         </Div>
-        <Div class="accountPicker width30">
-            <div class="skew Effect">
-            </div>
-            <div class="accInner" data-dropdown>
-                <button class="link" data-dropdown-button>Choose An Account</button>
-                <div class="DropMenu">
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Personal Account</p>
-                        </a>
-
-                    </div>
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Savings Account</p>
-                        </a>
-
-                    </div>
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Investments Account</p>
-                        </a>
-
-                    </div>
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Money market Account</p>
-                        </a>
-                    </div>
-                    <div class="accType Effect1">
-                        <a href="">
-                            <p>Retirment Account</p>
-                        </a>
-
-                    </div>
-                </div>
-                <div class="dropDown">
-                </div>
-            </div>
-        </Div>
-        <div class="AccountDetails">
-            <div class="img">
-                <img src="resources/imgs/Graph.png" alt="Graph of account details">
-            </div>
-            <div class="allInfo">
-                <div class="infoPartition">
-                    <h4>Account Number:</h4>
-                    <p>364794133486112</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Account Type:</h4>
-                    <p>Personal Account</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Associated Phone:</h4>
-                    <p>01222235455</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Account Iban:</h4>
-                    <p>36B7F4133486LMNO2</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Total Balance:</h4>
-                    <p>3,500,000</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Available Balance:</h4>
-                    <p>2,000,000</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Certificates:</h4>
-                    <p>1,500,000</p>
-                </div>
-                <div class="infoPartition">
-                    <h4>Account Currency:</h4>
-                    <p>EGP / LE</p>
-                </div>
-
-                <div class="clr"></div>
-            </div>
-            <div class="clr"></div>
-        </div>
-
-        <Div class="PossibleActions">
-            <div class="doableContainer">
-                <div class="doable ">
-                    <a href="">
-                        <div class="innerContainer ">
-                            <div class="innerIcon "><img src="resources/imgs/icons/Bills.png" alt="">
-                                <p>Pay bills</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/Transactions.png" alt="">
-                                <p>View Transactions</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/CreditCard.png">
-                                <p>View Credit Cards</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/Transfers.png" alt="">
-                                <p>Transfer Money</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/loan.png" alt="">
-                                <p>View Loans</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="doable">
-                    <a href="">
-                        <div class="innerContainer">
-                            <div class="innerIcon"><img src="resources/imgs/icons/Certificate.png" alt="">
-                                <p>View Certificates</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-
-                <div class="clr"></div>
-            </div>
-        </div>
-
-
-    </Div>
-
-
     </div>
+    <div class="apply-wrapper">
+        <div class="apply-form-wrapper">
+            <label  class="loanlabel"> Choose Report Type </label>
+            <div class="box">
+            <select  id="report" class="box" style="left: 160px;" autofocus required  >
+                <option value="" disabled selected hidden>--Report Type--</option>
+                <option value="Tec">Technical Issue</option>
+                <option value="Credit">Credit Card Theft</option>
+                <option value="Damage">Credit Card Damaged</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+            <div class="formbold-input">
+                <div>
+                  <label  class="loanlabel"> What is your Issue </label>
+                  <textarea id="w3review" name="w3review" rows="4" cols="50" style="position:relative; left: 2cm;" placeholder="State your Issue"></textarea>
+                  
+                </div>
+            <div style="padding: 1cm;"></div>
+              </div>
+              <div class="formbold-input-flex">
+                <button class="buttoncalc" type="button" onclick="Report()" style="position: relative;left:4.2cm" id="Calculate">
+                        Send Report
+                    </button>
+              </div>
+              
+        </div>
+    </div>
+    
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div style="padding: 50;"></div>
     <footer>
         <div class="final">
             <div class="finalTop">

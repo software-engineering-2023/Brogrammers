@@ -1,0 +1,257 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Roboto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+        <header>
+            <div class="navBar">
+                <div class="navImg">
+                    <img src="resources/imgs/bakery-light-1.png" alt="">
+                </div>
+                <nav>
+                    <div class="navList">
+                        <ul>
+                            <li><a href="" class="roboto">Home</a></li>
+                            <li><a href="" class="roboto">Announcments</a></li>
+                            <li><a href="" class="roboto">Manage Profile</a></li>
+                            <li><a href="" class="roboto">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="clr"></div>
+                </nav>
+            </div>
+        </header>
+            
+
+
+
+
+
+
+
+
+        <div class="container center3">
+            <Div class="introduction width40">
+                <h1>Apply for Loan</h1>
+            </Div>
+        </div>
+        <div class="apply-wrapper">
+            <div class="apply-form-wrapper">
+ 
+                <div class="apply-input-flex">
+                  <div>
+                    <label  class="loanlabel"> 
+                      Loan Type
+                    </label>
+                    <div class="box pos" style=" right: 20;">
+                    <select id="LoanType" autofocus required>
+                        <option value="" disabled selected hidden>--Please Chose Loan Type</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Car">Car</option>
+                        
+                      </select>
+                    </div>
+                   
+                  </div>
+                  <div>
+                    <label  class="loanlabel"> Associated Phone  </label>
+                    <input
+                      type="text"
+                      name="number"
+                      id="number"
+                      class="apply-input"
+                      required
+                      placeholder="Ex: 01234567890"
+                    />
+                    
+                    
+                  </div>
+                </div>
+          
+                <div class="formbold-input-flex">
+                  <div>
+                    <label  class="loanlabel"> Amount </label>
+                    <input
+                      type="number"
+                      name="Amount"
+                      id="Amount"
+                      class="apply-input"
+                      required
+                      placeholder="Ex: 100,000"
+                    />
+                    
+                  </div>
+                  <div>
+                    <label  class="loanlabel"> Duration </label>
+                    <div class="box">
+                    <select id="Duration" class="box" autofocus required  >
+                        <option value="" disabled selected hidden>--Please Chose Duration</option>
+                        <option value="1year">1 Year</option>
+                        <option value="2year">2 Year</option>
+                        <option value="3year">3 Year</option>
+                        <option value="4year">4 Year</option>
+                        <option value="5year">5 Year</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+          
+               
+                <div class="formbold-input-flex">
+                    <div>
+                      <label  class="loanlabel">
+                        Intrest Rate For your Selection
+                        </label>
+                      <label id="Intrest Rate" class="Intrest"> Empty</label>
+                      
+                    </div>
+                    <div>
+                      <label  class="loanlabel"> Installments Amount Monthly </label>
+                      <label id="Installment Amount" class="Intrest"> Empty</label>
+                     
+                    </div>
+                  </div>
+                  <div class="formbold-input-flex">
+                    <button class="buttoncalc" type="button" onclick="Calculate()" id="Calculate">
+                        Calculate Intrest and Installment
+                    </button>
+                    <button class="buttoncalc" type="button" onclick="CheckApply()" id="Calculate">
+                        Apply
+                    </button>
+                  </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+            </div>
+            
+       
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="final">
+                <div class="finalTop">
+                    <div class="center">
+                        <div class="row">
+                            <h4>About us</h4>
+                            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                                consectetur.
+                                I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                                consectetur.
+                                <br><br>
+                                We are the champions! We are the most amazing theme of all time, yeah.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h4>Facing an issue?</h4>
+                            <ul class="iconlist">
+                                <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                                    <a href="">
+                                        Report a problem
+                                    </a>
+                                </li>
+                                <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                                    <a href="">
+                                        Chat with a representive
+                                    </a>
+                                </li>
+                                <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                                    <a href="">
+                                        Message us on Social media
+                                    </a>
+                                </li>
+                                <li class="icons2 lastEl"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                                    <a href="">
+                                        Contact us
+    
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h4>Opening Hours</h4>
+                            <ul class="iconlist">
+                                <li class="icons2">
+                                    <p>Monday 10AM - 9PM</p>
+                                </li>
+                                <li class="icons2">
+                                    <p>Tuesday 10AM - 9PM</p>
+                                </li>
+                                <li class="icons2">
+                                    <p>Wednesday 10AM - 9PM</p>
+                                </li>
+                                <li class="icons2">
+                                    <p>Thursday 10AM - 10PM</p>
+                                </li>
+                                <li class="icons2">
+                                    <p>Friday 10AM - 10PM</p>
+                                </li>
+                                <li class="icons2 lastEl">
+                                    <p>Weekends 10AM - 11PM</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row backimage">
+                            <h4>Contact Details
+                            </h4>
+                            <ul class="iconlist">
+                                <li class="icons3"><img src="resources/imgs/Icons/location.png" alt="location icon" ;>
+                                    <p>Manchester Road 123-78B</p>
+                                </li>
+                                <li class="icons3"><img src="resources/imgs/Icons/phone-gray.png" alt="phone icon">
+                                    <p>+46 123 456 789</p>
+                                </li>
+                                <li class="icons3"><img src="resources/imgs/Icons/email-solid.png" alt="email icon">
+                                    <p>hello@sitename.com</p>
+                                </li>
+                                <li class="icons3 lastEl"><img src="resources/imgs/Icons/earth.png" alt="earth icon">
+                                    <p>http://www.sitename.com</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+    
+                    </div>
+    
+                </div>
+                <div class="FinalBottom">
+                    <div class="center2">
+                        <div><img src="resources/imgs/bakery-light-1.png" alt="image of logo of website">
+                        </div>
+                        <div>
+                            <p>Copyright 2017. All rights reserved.
+                            </p>
+                        </div>
+                        <div class="exter_logos">
+                            <a href=""><img src="resources/imgs/Icons/facebook.png" alt="facebook logo"></a>
+                            <a href=""><img src="resources/imgs/Icons/google.png" alt="Google logo"></a>
+                            <a href=""><img src="resources/imgs/Icons/linkedin.png" alt="Linked-in Logo"></a>
+                            <a href=""><img src="resources/imgs/Icons/twitter.png" alt="Twitter logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
