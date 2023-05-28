@@ -1,0 +1,118 @@
+body {
+    background-color: white;
+    font-family: 'Roboto ', serif;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    
+  }
+ .box {
+background-color: #ededed;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+border: 2px solid #cbb26a;
+border-radius: 20px;
+float: left;
+width: 500px;
+padding: 40px;
+margin: 40 20 60 20;
+position: relative;
+transition: all 0.3s ease-in-out;
+justify-content: center;
+}
+h2{
+    color: #cbb26a;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Transfertxt {
+    color: #cbb26a;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .form-label {
+    color: #cbb26a;
+    font-weight: bold;
+  }
+
+  .input-group-text{
+    border: 2px solid #cbb26a;
+  }
+  .form-control:hover,.btn:hover{
+    background-color: #cbb26a; 
+    border: 2px solid #cbb26a;
+  }
+  
+  .form-control,.form-select,.input-group mb-3 {
+    
+    color: #cbb26a;
+    border: 2px solid #cbb26a;
+  }
+
+  .btn-group {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+ .btn{
+    color: #cbb26a;
+    border: 2px solid #cbb26a;
+    background-color:#ededed ;
+    text-align: center;
+  } 
+  
+  .btn.btn-outline-warning:active{
+    background-color: #cbb26a; 
+    border: 2px solid #cbb26a;
+  }
+  .transferbtn {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .invalidMessage{
+    color: red; 
+    display: none
+  }
+ 
+  p{
+    display: none; 
+    color: red
+  }
+
+  @media only screen and (min-width: 992px) {
+ 
+    .row {
+      width: 10%;
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  
+    .row {
+      width: 35%;
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+   
+    .row {
+      width: 22%;
+    }
+  }
+  @media only screen and (min-width: 1700px) {
+   
+    .row {
+      width: 22%;
+    }
+  }

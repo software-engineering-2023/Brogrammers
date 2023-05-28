@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>StackOverflow</title>
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Roboto+Serif&display=swap" rel="stylesheet">
+    
+    <script src="script.js" defer></script>
+    <script src="Login.js" defer></script>
+
+    
+
+    
+</head>
+<body>
+
+  <header>
+    <div class="navBar">
+        <div class="navImg">
+            <img src="resources\Logo.png" alt="">
+        </div>
+        <nav>
+            <div class="navList">
+                <ul>
+                    <li><a href="" class="roboto">Home</a></li>
+                    <li><a href="" class="roboto">Announcments</a></li>
+                    <li><a href="" class="roboto">Manage Profile</a></li>
+                    <li><a href="" class="roboto">Logout</a></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </nav>
+    </div>
+</header>
+  
+  
+
+    <div class="wrapper">
+      <div class="box">
+      <h1 class="logintxt">Login Form</h1>
+     
+        <form    id="loginForm" action="" method="post"> 
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Username:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput"  placeholder="Enter your name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class = "form-label">Password:</label>
+            <input type="password" class="form-control" id="formGroupExampleInput2"  placeholder="Enter your password" required>
+          </div> 
+                  
+          <div class="mb-3">
+            <label for="validationDefault04" class="form-label">Role?</label>
+            <select class="form-select" id="validationDefault04" required >
+              <option selected disabled value="" class="choose">Choose...</option>
+              <option value="1">Client</option>
+              <option value="2">Banker</option>
+              <option value="3">Admin</option>
+            </select>
+          </div>
+
+          <p1 >Don't have an account? <a href="ClientHomePage.html" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" onclick="Register()" id="Register">Register Here</a></p1>  
+          
+          <div class="loginBtn">
+            <br>
+          <button type="submit" class="btn btn-outline-warning"  id="loginbtn" onclick="validateForm()"> LOGIN</button>
+        </div>
+        
+        </form>  
+      </div>
+    </div>
+
+
+
+
+
+
+    
+    <footer>
+      <div class="final">
+          <div class="finalTop">
+              <div class="center">
+                  <div class="row">
+                      <h4>About us</h4>
+                      <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                          consectetur.
+                          I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+                          consectetur.
+                          <br><br>
+                          We are the champions! We are the most amazing theme of all time, yeah.
+                      </p>
+                  </div>
+                  <div class="row">
+                      <h4>Facing an issue?</h4>
+                      <ul class="iconlist">
+                          <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                              <a href="">
+                                  Report a problem
+                              </a>
+                          </li>
+                          <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                              <a href="">
+                                  Chat with a representive
+                              </a>
+                          </li>
+                          <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                              <a href="">
+                                  Message us on Social media
+                              </a>
+                          </li>
+                          <li class="icons2 lastEl"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                              <a href="">
+                                  Contact us
+
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="row">
+                      <h4>Opening Hours</h4>
+                      <ul class="iconlist">
+                          <li class="icons2">
+                              <p>Monday 10AM - 9PM</p>
+                          </li>
+                          <li class="icons2">
+                              <p>Tuesday 10AM - 9PM</p>
+                          </li>
+                          <li class="icons2">
+                              <p>Wednesday 10AM - 9PM</p>
+                          </li>
+                          <li class="icons2">
+                              <p>Thursday 10AM - 10PM</p>
+                          </li>
+                          <li class="icons2">
+                              <p>Friday 10AM - 10PM</p>
+                          </li>
+                          <li class="icons2 lastEl">
+                              <p>Weekends 10AM - 11PM</p>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="row backimage">
+                      <h4>Contact Details
+                      </h4>
+                      <ul class="iconlist">
+                          <li class="icons3"><img src="resources/imgs/Icons/location.png" alt="location icon" ;>
+                              <p>Manchester Road 123-78B</p>
+                          </li>
+                          <li class="icons3"><img src="resources/imgs/Icons/phone-gray.png" alt="phone icon">
+                              <p>+46 123 456 789</p>
+                          </li>
+                          <li class="icons3"><img src="resources/imgs/Icons/email-solid.png" alt="email icon">
+                              <p>hello@sitename.com</p>
+                          </li>
+                          <li class="icons3 lastEl"><img src="resources/imgs/Icons/earth.png" alt="earth icon">
+                              <p>http://www.sitename.com</p>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="clear"></div>
+
+              </div>
+
+          </div>
+          <div class="FinalBottom">
+              <div class="center2">
+                  <div><img src="resources\_OLogo-removebg-preview (1).png" alt="image of logo of website">
+                  </div>
+                  <div>
+                      <p>Copyright 2017. All rights reserved.
+                      </p>
+                  </div>
+                  <div class="exter_logos">
+                      <a href=""><img src="resources/imgs/Icons/facebook.png" alt="facebook logo"></a>
+                      <a href=""><img src="resources/imgs/Icons/google.png" alt="Google logo"></a>
+                      <a href=""><img src="resources/imgs/Icons/linkedin.png" alt="Linked-in Logo"></a>
+                      <a href=""><img src="resources/imgs/Icons/twitter.png" alt="Twitter logo"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+<script src="js\popper.min.js"></script>
+<script src="js\jquery-3.7.0.min.js"></script>
+<script src="js\bootstrap.js"></script>
+</body>
+</html>

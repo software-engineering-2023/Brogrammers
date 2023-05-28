@@ -264,6 +264,7 @@ header {
   margin: 40 20 60 20;
   position: relative;
   transition: all 0.3s ease-in-out;
+  
 }
 .doable a {
   text-decoration: none;
@@ -447,3 +448,31 @@ header {
   font-weight: 400;
 }
 /* Footer end */
+
+
+@media only screen and (min-width: 992px) {
+ 
+  .row {
+    width: 10%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .row {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+ 
+  .row {
+    width: 22%;
+  }
+}
+@media only screen and (min-width: 1700px) {
+ 
+  .row {
+    width: 22%;
+  }
+}
