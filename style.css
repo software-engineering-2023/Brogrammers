@@ -178,17 +178,18 @@ header {
   }
 
 .dropDown {
-  width: 0;
-  height: 0;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 30px solid #cbb26a;
-  position: absolute;
-  right: 70;
-  top: 30
-  transition: all 0.3s ease;
-  z-index: -1;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid #cbb26a;
+    position: absolute;
+    right: 70;
+    top: 30;
+    transition: all 0.3s ease;
+    z-index :  -1;
 }
+
 .DropMenu {
   position: relative;
   top: calc(100% + 0.25 rem);
@@ -196,7 +197,6 @@ header {
   margin: 5 0 5 20;
   border: 2px solid #cbb26a;
   background-color: #ededed;
-
   border-radius: 0.25rem;
   box-shadow: 0 2px 20px 0 rgb(0, 0, 0, 0.1);
   left: 0;
