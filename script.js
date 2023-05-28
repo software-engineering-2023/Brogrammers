@@ -200,3 +200,28 @@ function Report(){
     window.location.href="ClientHomePage.html";
   }
 }
+function CheckOpen(){
+  const y = document.getElementById("AccType");
+  const value = y.value;
+  const AccType = y.options[y.selectedIndex].text;
+  const x = document.getElementById("Currency");
+  const value1 = x.value;
+  const Currency = x.options[x.selectedIndex].text;
+  const AssociatedPhone=document.getElementById("AccNumber").value;
+  const file=document.getElementById("file").value;
+  if(value==""){
+    alert("Please Choose Account Type")
+  }else if(AssociatedPhone.length==0){
+    alert("Please enter Phone Number");
+  }else if(AssociatedPhone.length!=11){
+    alert("Invalid Phone Number");
+  }else if(value1==""){
+    alert("please Choose Currency");
+  }else if(file==""){
+    alert("Please Upload Guarntees");
+  }
+  else{
+    alert("Opening Account Request have been Recorded ,"+"Kindly wait for our Response");
+    window.location.href="ClientHomePage.html";
+}
+}
