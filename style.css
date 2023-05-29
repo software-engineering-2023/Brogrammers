@@ -966,4 +966,45 @@ input[type="file"]::file-selector-button {
   .reminder img{
     width:50%;
   }
+  .styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 90%;
+    position: relative;
+    left:5%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    
+}
+.styled-table thead tr {
+    background-color: #cbb26a;
+    background-image: linear-gradient(to right,#cbb26a,gold);
+    color: #050f04;
+    text-align: left;
+    
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    
+}
+.styled-table tbody tr:hover{
+    text-decoration: underline;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
   
