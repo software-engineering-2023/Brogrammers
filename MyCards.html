@@ -9,26 +9,42 @@
 </head>
 
 <body>
+
+
+
+
     <header>
         <div class="navBar">
-            <div class="navImgPlus">
-                <img src="resources/imgs/navLogo (2).png" alt="" style="height: 100% ; width: auto;">
+            <div class="navImg">
+                <img src="resources/imgs/navLogo (2).png" alt="StackOverFlow BankLogo">
             </div>
             <nav>
                 <div class="navList">
                     <ul>
-                        <li><a href="" class="roboto">Home</a></li>
-                        <li><a href="" class="roboto">Announcments</a></li>
-                        <li><a href="" class="roboto">Manage Profile</a></li>
-                        <li><a href="" class="roboto">Logout</a></li>
+                        <li><a href="ClientHomePage.html" class="roboto">Home</a></li>
+                        <li><a href="annAndNoti.html" class="roboto">Announcments</a></li>
+                        <li><a href="annAndNoti.html" class="roboto">Notifications</a></li>
+                        <li><a href="manageProfile.html" class="roboto">Manage Profile</a></li>
+                        <li><a href="LandingPage.html" class="roboto">Logout</a></li>
                     </ul>
                 </div>
                 <div class="clr"></div>
             </nav>
         </div>
     </header>
+    
+    <div class="userProfile">
+        <div class="userImage">
+          <img src="./resources/imgs/user.png" alt="User Image">
+        </div>
+        <div class="userInfo">
+          <h2>Dav17</h2>
+          <p>Platinum Account</p>
+        </div>
+    </div>
+      
 
-    <div class="container center3" >
+    <div class="container center3"  style="margin-top: 20px;">
 
         <div style="  display: flex;
         flex-wrap: wrap;
@@ -108,10 +124,21 @@
                     <h4>Current Usage: </h4>
                     <p>50000</p>
                 </div>
+
                 <div class="infoPartition">
                     <h4>Payment Due:</h4>
                     <p>01/02/2134</p>
+                    <input type="checkbox" id="reminderButton">
+                    <label for="reminderButton" class="reminder" >Set Reminder<img src="./resources/imgs/bell.png" alt="bell"> </label> 
+
                 </div>
+
+                <div class="infoPartition">
+                    <h4>Points Collected</h4>
+                    <p id="totPoints">1,233</p>
+                    <button  onclick="redeemer(this)"  class="redeemPts"  id="redeeem">  Redeem Points </button>
+                </div>
+
 
                 <div class="clr"></div>
             </div>
@@ -126,46 +153,40 @@
             <label for="toggleButton" class="toggle-label" >Manage</label>
           
             <div class="button-container">
-              <button id="button1" class="manageables lightUp">Report Loss</button>
-              <button id="button2" class="manageables lightUp">Cancel Card</button>
+              <button  id="reportBtn" class="manageables lightUp">Report Issue</button>
+              <button onclick="cancelReq()" id="button2" class="manageables lightUp">Cancel Card</button>
+
             </div>
             <!-- class="manageables" -->
         </div>
           
 
 
-          
+        <!-- <button id="reportBtn">Report Issue</button> -->
 
-<!-- 
-        <div class="cardManager">
-            <input type="checkbox" id="toggleButton">
-            <label for="toggleButton" class="toggle-label">Toggle</label>
-            
-            <div class="button-container">
-              <button id="button1">Button 1</button>
-              <button id="button2">Button 2</button>
+        <div id="reportModal" class="modal" >
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Report Issue</h2>
+              <form id="reportForm">
+                <label for="issueType">Issue Type:</label>
+                <select id="issueType" name="issueType" required style="margin: 10px;"> 
+                  <option value="">Select Issue Type</option>
+                  <option value="theft">Theft</option>
+                  <option value="replacement">Replacement</option>
+                  <option value="loss">Loss</option>
+                </select>
+                <br>
+                <div id="replacementDetails" style="display: none;">
+                  <label for="deliveryAddress">Delivery Address:</label>
+                  <textarea required id="deliveryAddress" name="deliveryAddress"></textarea>
+                  <br>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
             </div>
-         </div> -->
-
-
-
-
-<!-- 
-        <Div class="accountPicker skewPlus     " style="flex: 1;  margin:20px ;  margin-left: 0px; justify-content: flex-end; width: 100%;">
-
-            <button   class="Effect  roboto" style="width:100% ; height: 100%; ">Manage Cards</button>
-        </Div>
- -->
-
-
-
-
-
-        
-
-
-
-
+          </div>
+    </div>   
     <footer>
         <div class="final">
             <div class="finalTop">
@@ -180,32 +201,7 @@
                             We are the champions! We are the most amazing theme of all time, yeah.
                         </p>
                     </div>
-                    <div class="row">
-                        <h4>Facing an issue?</h4>
-                        <ul class="iconlist">
-                            <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
-                                <a href="">
-                                    Report a problem
-                                </a>
-                            </li>
-                            <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
-                                <a href="">
-                                    Chat with a representive
-                                </a>
-                            </li>
-                            <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
-                                <a href="">
-                                    Message us on Social media
-                                </a>
-                            </li>
-                            <li class="icons2 lastEl"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
-                                <a href="">
-                                    Contact us
 
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
                     <div class="row">
                         <h4>Opening Hours</h4>
                         <ul class="iconlist">
@@ -247,6 +243,32 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="row">
+                        <h4>Facing an issue?</h4>
+                        <ul class="iconlist">
+                            <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                                <a href="">
+                                    Report a problem
+                                </a>
+                            </li>
+                            <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                                <a href="">
+                                    Chat with a representive
+                                </a>
+                            </li>
+                            <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                                <a href="">
+                                    Message us on Social media
+                                </a>
+                            </li>
+                            <li class="icons2 lastEl"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                                <a href="">
+                                    Contact us
+
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="clear"></div>
 
                 </div>
@@ -254,10 +276,10 @@
             </div>
             <div class="FinalBottom">
                 <div class="center2">
-                    <div><img src="resources/imgs/bakery-light-1.png" alt="image of logo of website">
+                    <div><img src="resources/imgs/Ologo.png" alt="image of logo of website">
                     </div>
                     <div>
-                        <p>Copyright 2017. All rights reserved.
+                        <p>Copyright. All rights reserved.
                         </p>
                     </div>
                     <div class="exter_logos">
@@ -269,6 +291,108 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>  
+
+
+          
+
+<!-- 
+        <div class="cardManager">
+            <input type="checkbox" id="toggleButton">
+            <label for="toggleButton" class="toggle-label">Toggle</label>
+            
+            <div class="button-container">
+              <button id="button1">Button 1</button>
+              <button id="button2">Button 2</button>
+            </div>
+         </div> -->
+
+
+
+
+<!-- 
+        <Div class="accountPicker skewPlus     " style="flex: 1;  margin:20px ;  margin-left: 0px; justify-content: flex-end; width: 100%;">
+
+            <button   class="Effect  roboto" style="width:100% ; height: 100%; ">Manage Cards</button>
+        </Div>
+ -->
+
+
+
+
+
+        
+
+
+
+
+   
+
+
+    <script>
+      function redeemer(button) {
+        var pts = document.getElementById("totPoints");
+        pts.textContent= "0"
+        button.disabled = true;
+      }
+
+      function reportLoss() {
+      alert("The loss report has been sent successfully. The card have been temporarily disabled");
+    }
+
+    function cancelReq() {
+      alert("Cancel request have been sent successfully. The card have been temporarily disabled");
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+  var reportBtn = document.getElementById("reportBtn");
+  var reportModal = document.getElementById("reportModal");
+  var closeBtn = document.getElementsByClassName("close")[0];
+  var reportForm = document.getElementById("reportForm");
+
+  // Show modal when report button is clicked
+  reportBtn.addEventListener("click", function() {
+    reportModal.style.display = "block";
+  });
+
+  // Close the modal when close button is clicked
+  closeBtn.addEventListener("click", function() {
+    reportModal.style.display = "none";
+  });
+
+  // Close the modal when user clicks outside of it
+  window.addEventListener("click", function(event) {
+    if (event.target == reportModal) {
+      reportModal.style.display = "none";
+    }
+  });
+
+  // Handle form submission
+  reportForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Add your code to handle form submission here
+    // You can use AJAX or submit the form data to a server
+    // using the fetch API or any other method of your choice
+    // Once the form is submitted, you can close the modal
+    reportModal.style.display = "none";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var issueTypeSelect = document.getElementById("issueType");
+  var replacementDetailsDiv = document.getElementById("replacementDetails");
+
+  issueTypeSelect.addEventListener("change", function() {
+    if (issueTypeSelect.value === "replacement") {
+      replacementDetailsDiv.style.display = "block";
+    } else {
+      replacementDetailsDiv.style.display = "none";
+    }
+  });
+});
+
+
+    </script>
+    
 </body>
 </html>

@@ -15,6 +15,12 @@
   height: 300vh;
 } */
 
+/* Nav Bar Start */
+
+/* body {
+  height: 300vh;
+} */
+
 header {
   background: #52c234; /* fallback for old browsers */
 
@@ -41,7 +47,7 @@ header {
 }
 
 .navImg {
-  width: 140;
+  width: 183px;
   float: left;
   padding: 10px 0 0 0;
   height: 80px;
@@ -65,11 +71,12 @@ header {
   font-size: 14px;
   line-height: 60px;
   box-sizing: border-box;
-  padding: 20;
+  padding: 20px;
 }
 .navList a:hover {
   color: #cbb26a;
 }
+/* Nav Bar End */
 /* Nav Bar End */
 
 /* Start Of Body */

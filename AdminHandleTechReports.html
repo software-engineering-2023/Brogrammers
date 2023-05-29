@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>StackOverflow</title>
+  <link rel="stylesheet" href="css\bootstrap.css">
+  <link rel="stylesheet" href="client.css">
+  <!-- <link rel="stylesheet" type="text/css" href="Login.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Roboto+Serif&display=swap" rel="stylesheet">
+
+  <script src="script1.js" defer></script>
+  <script src="AdminHandleTechReports.js" defer></script>
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <header>
+    <div class="navBar">
+      <div class="navImg">
+        <img src="resources/imgs/navLogo (2).png" alt="StackOverFlow BankLogo">
+      </div>
+      <nav>
+        <div class="navList">
+          <ul>
+            <li><a href="AdminHome.html" class="roboto">Home</a></li>
+            <!-- <li><a href="annAndNoti.html" class="roboto">Announcments</a></li> -->
+            <li><a href="" class="roboto">Statistics</a></li>
+            <li><a href="LandingPage.html" class="roboto">Logout</a></li>
+          </ul>
+        </div>
+        <div class="clr"></div>
+      </nav>
+    </div>
+  </header>
+  <DIV class="head1" style="padding-top: 90px; text-align: center;">
+    <h1 style="color: black;">Technical Issues</h1>
+  </DIV>
+
+  <br><br>
+
+  <table class="custom-table table table-striped">
+    <thead>
+
+      <tr style="  background: linear-gradient(to right, #12370f, #1f5f1a);
+          color: #cbb26a; border: 2px solid #d8b036;">
+        <th>Client Id</th>
+        <th>Report</th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Accept</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="row1">
+        <td>1</td>
+        <td>Login issues</td>
+        <td>2023-05-01</td>
+        <td style="color: #cbb26a" id="Status1">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept1">Accept</button>
+        </td>
+      </tr>
+
+      <!-- Repeated code -->
+      <tr id="row2">
+        <td>2</td>
+        <td>Slow website loading</td>
+        <td>2023-05-02</td>
+        <td style="color: #cbb26a" id="Status2">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept2">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row3">
+        <td>3</td>
+        <td>Error messages during transactions</td>
+        <td>2023-05-03</td>
+        <td style="color: #cbb26a" id="Status3">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept3">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row4">
+        <td>4</td>
+        <td>Inaccurate account balance</td>
+        <td>2023-05-04</td>
+        <td style="color: #cbb26a" id="Status4">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept4">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row5">
+        <td>5</td>
+        <td>Unresponsive or broken links</td>
+        <td>2023-05-05</td>
+        <td style="color: #cbb26a" id="Status5">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept5">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row6">
+        <td>6</td>
+        <td>Mobile compatibility issues</td>
+        <td>2023-05-06</td>
+        <td style="color: #cbb26a" id="Status6">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept6">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row7">
+        <td>7</td>
+        <td>Online chat or customer support not available</td>
+        <td>2023-05-07</td>
+        <td style="color: #cbb26a" id="Status7">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept7">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row8">
+        <td>8</td>
+        <td>Security certificate errors</td>
+        <td>2023-05-08</td>
+        <td style="color: #cbb26a" id="Status8">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept8">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row9">
+        <td>9</td>
+        <td>Payment gateway failures</td>
+        <td>2023-05-09</td>
+        <td style="color: #cbb26a" id="Status9">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept9">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row10">
+        <td>10</td>
+        <td>Incorrect transaction history</td>
+        <td>2023-05-10</td>
+        <td style="color: #cbb26a" id="Status10">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept10">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row11">
+        <td>11</td>
+        <td>Unreliable account statement downloads</td>
+        <td>2023-05-11</td>
+        <td style="color: #cbb26a" id="Status11">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept11">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row12">
+        <td>12</td>
+        <td>Unreliable fund transfer services</td>
+        <td>2023-05-12</td>
+        <td style="color: #cbb26a" id="Status12">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept12">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row13">
+        <td>13</td>
+        <td>Unexpected website downtime</td>
+        <td>2023-05-13</td>
+        <td style="color: #cbb26a" id="Status13">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept13">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row14">
+        <td>14</td>
+        <td>Unreliable fund transfer services</td>
+        <td>2023-05-14</td>
+        <td style="color: #cbb26a" id="Status14">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept14">Accept</button>
+        </td>
+      </tr>
+
+      <tr id="row15">
+        <td>15</td>
+        <td>Cross-browser compatibility problems</td>
+        <td>2023-05-15</td>
+        <td style="color: #cbb26a" id="Status15">Open</td>
+        <td>
+          <button type="button" class="btn btn-outline-warning loginBtn acceptBtn" id="Accept15">Accept</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+  <footer>
+    <div class="final">
+      <div class="finalTop">
+        <div class="center">
+          <div class="row">
+            <h4>About us</h4>
+            <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+              consectetur.
+              I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet,
+              consectetur.
+              <br><br>
+              We are the champions! We are the most amazing theme of all time, yeah.
+            </p>
+          </div>
+          <div class="row">
+            <h4>Facing an issue?</h4>
+            <ul class="iconlist">
+              <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                <a href="">
+                  Report a problem
+                </a>
+              </li>
+              <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                <a href="">
+                  Chat with a representive
+                </a>
+              </li>
+              <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                <a href="">
+                  Message us on Social media
+                </a>
+              </li>
+              <li class="icons2 lastEl"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                <a href="">
+                  Contact us
+
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <h4>Opening Hours</h4>
+            <ul class="iconlist">
+              <li class="icons2">
+                <p>Monday 10AM - 9PM</p>
+              </li>
+              <li class="icons2">
+                <p>Tuesday 10AM - 9PM</p>
+              </li>
+              <li class="icons2">
+                <p>Wednesday 10AM - 9PM</p>
+              </li>
+              <li class="icons2">
+                <p>Thursday 10AM - 10PM</p>
+              </li>
+              <li class="icons2">
+                <p>Friday 10AM - 10PM</p>
+              </li>
+              <li class="icons2 lastEl">
+                <p>Weekends 10AM - 11PM</p>
+              </li>
+            </ul>
+          </div>
+          <div class="row backimage">
+            <h4>Contact Details
+            </h4>
+            <ul class="iconlist">
+              <li class="icons3"><img src="resources/imgs/Icons/location.png" alt="location icon" ;>
+                <p>Manchester Road 123-78B</p>
+              </li>
+              <li class="icons3"><img src="resources/imgs/Icons/phone-gray.png" alt="phone icon">
+                <p>+46 123 456 789</p>
+              </li>
+              <li class="icons3"><img src="resources/imgs/Icons/email-solid.png" alt="email icon">
+                <p>hello@sitename.com</p>
+              </li>
+              <li class="icons3 lastEl"><img src="resources/imgs/Icons/earth.png" alt="earth icon">
+                <p>http://www.sitename.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="clear"></div>
+
+        </div>
+
+      </div>
+      <div class="FinalBottom">
+        <div class="center2">
+          <div><img src="resources\_OLogo-removebg-preview (1).png" alt="image of logo of website">
+          </div>
+          <div>
+            <p>Copyright 2017. All rights reserved.
+            </p>
+          </div>
+          <div class="exter_logos">
+            <a href=""><img src="resources/imgs/Icons/facebook.png" alt="facebook logo"></a>
+            <a href=""><img src="resources/imgs/Icons/google.png" alt="Google logo"></a>
+            <a href=""><img src="resources/imgs/Icons/linkedin.png" alt="Linked-in Logo"></a>
+            <a href=""><img src="resources/imgs/Icons/twitter.png" alt="Twitter logo"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js\popper.min.js"></script>
+  <script src="js\jquery-3.7.0.min.js"></script>
+  <script src="js\bootstrap.js"></script>
+</body>
+
+</html>
+</body>

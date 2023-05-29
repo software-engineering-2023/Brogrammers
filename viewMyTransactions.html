@@ -1,152 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- <meta charset="UTF-8">
+  <!-- <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stack Overflow</title> -->
 
-    <script src="script.js" defer></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Stack Overflow</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Roboto+Serif&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="viewMyTransactions.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stack Overflow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&family=Roboto+Serif&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="client.css">
+  <link rel="stylesheet" type="text/css" href="viewMyTransactions.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 
 
-    
+
 
 </head>
+
 <body>
-<header>
-      <div class="navBar">
-          <div class="navImg">
-              <img src="resources/imgs/icons/navLogo.png" class="navImg" alt="">
-          </div>
-          <nav>
-              <div class="navList">
-                  <ul>
-                      <li><a href="" class="roboto">Home</a></li>
-                      <li><a href="" class="roboto">Announcments</a></li>
-                      <li><a href="" class="roboto">Manage Profile</a></li>
-                      <li><a href="" class="roboto">Logout</a></li>
-                  </ul>
-              </div>
-              <div class="clr"></div>
-          </nav>
-      </div>
-  </header>
+  <header>
+    <div class="navBar">
+        <div class="navImg">
+            <img src="resources/imgs/navLogo (2).png" alt="StackOverFlow BankLogo">
+        </div>
+        <nav>
+            <div class="navList">
+                <ul>
+                    <li><a href="ClientHomePage.html" class="roboto">Home</a></li>
+                    <li><a href="annAndNoti.html" class="roboto">Announcments</a></li>
+                    <li><a href="annAndNoti.html" class="roboto">Notifications</a></li>
+                    <li><a href="manageProfile.html" class="roboto">Manage Profile</a></li>
+                    <li><a href="LandingPage.html" class="roboto">Logout</a></li>
+                </ul>
+            </div>
+            <div class="clr"></div>
+        </nav>
+    </div>
+</header>
   <br><br><br><br><br><br>
 
 
-    <Div class="introduction width40">
-        <h1 class="h1">My Bank Transactions</h1>
-    </Div>
+  <Div class="introduction width40">
+    <h1 class="h1">My Bank Transactions</h1>
+  </Div>
 
-    <br><br>
+  <br><br>
 
-        <table class="custom-table table table-striped">
-            <thead>
-              <tr style="background-color: #12420d; color: #cbb26a;">
-                <th>Date</th>
-                <th>Description</th>
-                <th>Amount</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>2023-05-01</td>
-                <td>Online Purchase</td>
-                <td>$50.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-02</td>
-                <td>ATM Withdrawal</td>
-                <td>$100.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-03</td>
-                <td>Paycheck Deposit</td>
-                <td>$1,500.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-04</td>
-                <td>Utility Bill Payment</td>
-                <td>$75.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-05</td>
-                <td>Restaurant Expense</td>
-                <td>$35.50</td>
-              </tr>
-              <tr>
-                <td>2023-05-06</td>
-                <td>Online Purchase</td>
-                <td>$65.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-07</td>
-                <td>ATM Withdrawal</td>
-                <td>$200.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-08</td>
-                <td>Paycheck Deposit</td>
-                <td>$1,700.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-09</td>
-                <td>Utility Bill Payment</td>
-                <td>$90.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-10</td>
-                <td>Restaurant Expense</td>
-                <td>$42.75</td>
-              </tr>
-              <tr>
-                <td>2023-05-11</td>
-                <td>Online Purchase</td>
-                <td>$80.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-12</td>
-                <td>ATM Withdrawal</td>
-                <td>$150.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-13</td>
-                <td>Paycheck Deposit</td>
-                <td>$2,000.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-14</td>
-                <td>Utility Bill Payment</td>
-                <td>$85.00</td>
-              </tr>
-              <tr>
-                <td>2023-05-15</td>
-                <td>Restaurant Expense</td>
-                <td>$28.50</td>
-              </tr>
-            </tbody>
-          </table>
-<br><br>
+  <table class="custom-table table table-striped">
+    <thead>
+      <tr style="background-color: #12420d; color: #cbb26a;">
+        <th>Date</th>
+        <th>Description</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2023-05-01</td>
+        <td>Online Purchase</td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-02</td>
+        <td>ATM Withdrawal</td>
+        <td>$100.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-03</td>
+        <td>Paycheck Deposit</td>
+        <td>$1,500.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-04</td>
+        <td>Utility Bill Payment</td>
+        <td>$75.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-05</td>
+        <td>Restaurant Expense</td>
+        <td>$35.50</td>
+      </tr>
+      <tr>
+        <td>2023-05-06</td>
+        <td>Online Purchase</td>
+        <td>$65.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-07</td>
+        <td>ATM Withdrawal</td>
+        <td>$200.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-08</td>
+        <td>Paycheck Deposit</td>
+        <td>$1,700.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-09</td>
+        <td>Utility Bill Payment</td>
+        <td>$90.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-10</td>
+        <td>Restaurant Expense</td>
+        <td>$42.75</td>
+      </tr>
+      <tr>
+        <td>2023-05-11</td>
+        <td>Online Purchase</td>
+        <td>$80.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-12</td>
+        <td>ATM Withdrawal</td>
+        <td>$150.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-13</td>
+        <td>Paycheck Deposit</td>
+        <td>$2,000.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-14</td>
+        <td>Utility Bill Payment</td>
+        <td>$85.00</td>
+      </tr>
+      <tr>
+        <td>2023-05-15</td>
+        <td>Restaurant Expense</td>
+        <td>$28.50</td>
+      </tr>
+    </tbody>
+  </table>
+  <br><br>
 
 
-<Div class="introduction width40">
+  <Div class="introduction width40">
     <h1 class="h1">My Credit Card Transactions</h1>
-</Div>
+  </Div>
 
-<br><br>
+  <br><br>
 
 
-<table class="custom-table table table-striped">
+  <table class="custom-table table table-striped">
     <thead>
       <tr style="background-color: #12420d; color: #cbb26a;">
         <th>Date</th>
@@ -239,77 +243,77 @@
         <td>Bookstore</td>
         <td>$25.00</td>
         <td>Books</td>
-    </tr>
-    <tr>
-      <td>2023-05-15</td>
-      <td>Coffee Shop</td>
-      <td>$4.50</td>
-      <td>Coffee Shop</td>
-    </tr>
-    <tr>
-      <td>2023-05-16</td>
-      <td>Supermarket</td>
-      <td>$60.00</td>
-      <td>Groceries</td>
-    </tr>
-    <tr>
-      <td>2023-05-17</td>
-      <td>Online Store</td>
-      <td>$110.00</td>
-      <td>Online Shopping</td>
-    </tr>
-    <tr>
-      <td>2023-05-18</td>
-      <td>Clothing Store</td>
-      <td>$75.00</td>
-      <td>Fashion</td>
-    </tr>
-    <tr>
-      <td>2023-05-19</td>
-      <td>Gas Station</td>
-      <td>$35.00</td>
-      <td>Transportation</td>
-    </tr>
-    <tr>
-      <td>2023-05-20</td>
-      <td>Restaurant</td>
-      <td>$65.00</td>
-      <td>Dining</td>
-    </tr>
-    <tr>
-      <td>2023-05-21</td>
-      <td>Movie Theater</td>
-      <td>$15.00</td>
-      <td>Entertainment</td>
-    </tr>
-    <tr>
-      <td>2023-05-22</td>
-      <td>Online Store</td>
-      <td>$80.00</td>
-      <td>Online Shopping</td>
-    </tr>
-    <tr>
-      <td>2023-05-23</td>
-      <td>Electronics Store</td>
-      <td>$180.00</td>
-      <td>Electronics</td>
-    </tr>
-    <tr>
-      <td>2023-05-24</td>
-      <td>Restaurant</td>
-      <td>$95.00</td>
-      <td>Dining</td>
-    </tr>
-    <tr>
-      <td>2023-05-25</td>
-      <td>Gym Membership</td>
-      <td>$40.00</td>
-      <td>Fitness</td>
-    </tr>
-  </tbody>
-</table>
+      </tr>
+      <tr>
+        <td>2023-05-15</td>
+        <td>Coffee Shop</td>
+        <td>$4.50</td>
+        <td>Coffee Shop</td>
+      </tr>
+      <tr>
+        <td>2023-05-16</td>
+        <td>Supermarket</td>
+        <td>$60.00</td>
+        <td>Groceries</td>
+      </tr>
+      <tr>
+        <td>2023-05-17</td>
+        <td>Online Store</td>
+        <td>$110.00</td>
+        <td>Online Shopping</td>
+      </tr>
+      <tr>
+        <td>2023-05-18</td>
+        <td>Clothing Store</td>
+        <td>$75.00</td>
+        <td>Fashion</td>
+      </tr>
+      <tr>
+        <td>2023-05-19</td>
+        <td>Gas Station</td>
+        <td>$35.00</td>
+        <td>Transportation</td>
+      </tr>
+      <tr>
+        <td>2023-05-20</td>
+        <td>Restaurant</td>
+        <td>$65.00</td>
+        <td>Dining</td>
+      </tr>
+      <tr>
+        <td>2023-05-21</td>
+        <td>Movie Theater</td>
+        <td>$15.00</td>
+        <td>Entertainment</td>
+      </tr>
+      <tr>
+        <td>2023-05-22</td>
+        <td>Online Store</td>
+        <td>$80.00</td>
+        <td>Online Shopping</td>
+      </tr>
+      <tr>
+        <td>2023-05-23</td>
+        <td>Electronics Store</td>
+        <td>$180.00</td>
+        <td>Electronics</td>
+      </tr>
+      <tr>
+        <td>2023-05-24</td>
+        <td>Restaurant</td>
+        <td>$95.00</td>
+        <td>Dining</td>
+      </tr>
+      <tr>
+        <td>2023-05-25</td>
+        <td>Gym Membership</td>
+        <td>$40.00</td>
+        <td>Fitness</td>
+      </tr>
+    </tbody>
+  </table>
 
-<br><br>
+  <br><br>
 
 
 
@@ -327,32 +331,7 @@
                         We are the champions! We are the most amazing theme of all time, yeah.
                     </p>
                 </div>
-                <div class="row">
-                    <h4>Facing an issue?</h4>
-                    <ul class="iconlist">
-                        <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
-                            <a href="">
-                                Report a problem
-                            </a>
-                        </li>
-                        <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
-                            <a href="">
-                                Chat with a representive
-                            </a>
-                        </li>
-                        <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
-                            <a href="">
-                                Message us on Social media
-                            </a>
-                        </li>
-                        <li class="icons2 lastEl"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
-                            <a href="">
-                                Contact us
-  
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+
                 <div class="row">
                     <h4>Opening Hours</h4>
                     <ul class="iconlist">
@@ -394,17 +373,43 @@
                         </li>
                     </ul>
                 </div>
+                <div class="row">
+                    <h4>Facing an issue?</h4>
+                    <ul class="iconlist">
+                        <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                            <a href="">
+                                Report a problem
+                            </a>
+                        </li>
+                        <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                            <a href="">
+                                Chat with a representive
+                            </a>
+                        </li>
+                        <li class="icons2"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                            <a href="">
+                                Message us on Social media
+                            </a>
+                        </li>
+                        <li class="icons2 lastEl"><img src="resources/imgs/Icons/arrow.png" alt="arrow icon">
+                            <a href="">
+                                Contact us
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="clear"></div>
-  
+
             </div>
-  
+
         </div>
         <div class="FinalBottom">
             <div class="center2">
-                <div><img src="resources/imgs/icons/footerLogo.png" alt="image of logo of website">
+                <div><img src="resources/imgs/Ologo.png" alt="image of logo of website">
                 </div>
                 <div>
-                    <p>Copyright 2017. All rights reserved.
+                    <p>Copyright. All rights reserved.
                     </p>
                 </div>
                 <div class="exter_logos">
@@ -416,8 +421,11 @@
             </div>
         </div>
     </div>
-  </footer>
+</footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
