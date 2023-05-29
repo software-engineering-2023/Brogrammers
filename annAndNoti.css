@@ -1,0 +1,72 @@
+.announcement-card {
+    border: 1px solid #cbb26a;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .announcement-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .announcement-date {
+    color: #888;
+    font-size: 14px;
+  }
+
+  .announcement-summary {
+    font-size: 16px;
+  }
+
+  body {
+    /* background-color: #FAF9F6; */
+    background-color: #FFFF;
+    font-family: 'Roboto ', serif;
+  }
+
+.notification-card {
+    border: 1px solid #cbb26a;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .notification-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .notification-date {
+    color: #888;
+    font-size: 14px;
+  }
+
+  .notification-body {
+    font-size: 16px;
+  }
+
+  .h1{
+    text-align: center;
+    color: #cbb26a;
+    font-family: 'Roboto ', serif;
+  }
+
+  .h{
+    /* text-align: center; */
+    color: #cbb26a;
+    font-family: 'Roboto ', serif;
+  }
+
+  .vertical-line {
+    border-left: 5px solid #cbb26a;
+    height: 970px;
+  }
+
+  .announcement-container {
+    height: 600px; /* Adjust the height as needed */
+    overflow-y: auto;
+    border: 1px solid #cbb26a;
+    padding: 10px;
+  }
+
