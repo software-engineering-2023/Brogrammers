@@ -45,7 +45,7 @@ function validate() {
     alert("Your SSN should be 14 Number");
   } else if (address.length == 0) {
     alert("Please Enter your address");
-  } else if (address.length < 5 || regex.test(address)) {
+  } else if (address.length < 5) {
     alert("Invalid address");
   } else if (username.length == 0) {
     alert("Please enter Username");
@@ -57,7 +57,7 @@ function validate() {
     alert("Please check the terms and conditions");
   } else {
     alert("You have Registered Succesfully");
-    window.location.href = "";
+    window.location.href = "Login.html";
   }
 }
 function Calculate() {
