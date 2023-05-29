@@ -332,9 +332,17 @@ header {
 }
 
 .row {
+  position: relative;
   width: 22%;
   float: left;
-  margin: 10 15;
+  margin: 20px 30px;
+  padding: 50px;
+}
+pad{
+  position: relative;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
 }
 
 .row h4 {

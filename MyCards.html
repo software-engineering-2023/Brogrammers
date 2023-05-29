@@ -157,9 +157,6 @@
               <button onclick="cancelReq()" id="button2" class="manageables lightUp">Cancel Card</button>
 
             </div>
-
-            <button id="paymentBtn" class="redeemPts" style="height: 50px; width: 32%;">Credit Card Payment</button>
-
             <!-- class="manageables" -->
         </div>
           
@@ -167,63 +164,9 @@
 
         <!-- <button id="reportBtn">Report Issue</button> -->
 
-        <!-- <div id="reportModal" class="modal" >
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2>Report Issue</h2>
-              <form id="reportForm">
-                <label for="issueType">Issue Type:</label>
-                <select id="issueType" name="issueType" required style="margin: 10px;"> 
-                  <option value="">Select Issue Type</option>
-                  <option value="theft">Theft</option>
-                  <option value="replacement">Replacement</option>
-                  <option value="loss">Loss</option>
-                </select>
-                <br>
-                <div id="replacementDetails" style="display: none;">
-                  <label for="deliveryAddress">Delivery Address:</label>
-                  <textarea required id="deliveryAddress" name="deliveryAddress"></textarea>
-                  <br>
-                </div>
-                <button type="submit">Submit</button>
-              </form>
-            </div>
-          </div> -->
-
-          
-        <div id="paymentModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2>Credit Card Payment</h2>
-              <form id="paymentForm">
-                <label for="dueDate">Due Date: 01/02/2134</label>
-                <br>
-                <label for="totalDebt">Total Debt: 50000</label>
-                <br>
-                <label for="paymentType">Payment Type:</label>
-                <select id="paymentType" name="paymentType" required>
-                  <option value="">Select Payment Type</option>
-                  <option value="full">Pay Full Amount</option>
-                  <option value="partial">Pay Partial Amount</option>
-                </select>
-                <br>
-                <div id="partialPaymentAmount" style="display: none;">
-                  <label for="partialAmount">Partial Amount:</label>
-                  <input type="number" id="partialAmount" name="partialAmount" min="0" step="0.01" required>
-                  <br>
-                </div>
-                <button type="submit">Pay</button>
-              </form>
-            </div>
-          </div>
-          
-
-
-        <!-- <button id="reportBtn">Report Issue</button> -->
-
         <div id="reportModal" class="modal" >
             <div class="modal-content">
-              <span class="close1">&times;</span>
+              <span class="close">&times;</span>
               <h2>Report Issue</h2>
               <form id="reportForm">
                 <label for="issueType">Issue Type:</label>
@@ -448,54 +391,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  var paymentBtn = document.getElementById("paymentBtn");
-  var paymentModal = document.getElementById("paymentModal");
-  var closeBtns = document.getElementsByClassName("close");
-  var paymentForm = document.getElementById("paymentForm");
-
-  // Show modal when payment button is clicked
-  paymentBtn.addEventListener("click", function() {
-    paymentModal.style.display = "block";
-  });
-
-  // Close the modal when close button is clicked
-  for (var i = 0; i < closeBtns.length; i++) {
-    closeBtns[i].addEventListener("click", function() {
-      paymentModal.style.display = "none";
-    });
-  }
-
-  // Close the modal when user clicks outside of it
-  window.addEventListener("click", function(event) {
-    if (event.target == paymentModal) {
-      paymentModal.style.display = "none";
-    }
-  });
-
-  // Handle payment form submission
-  paymentForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-    var paymentAmount = parseFloat(document.getElementById("paymentAmount").value);
-
-    paymentModal.style.display = "none";
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  var paymentTypeSelect = document.getElementById("paymentType");
-  var partialPaymentAmountDiv = document.getElementById("partialPaymentAmount");
-
-  paymentTypeSelect.addEventListener("change", function() {
-    if (paymentTypeSelect.value === "partial") {
-      partialPaymentAmountDiv.style.display = "block";
-    } else {
-      partialPaymentAmountDiv.style.display = "none";
-    }
-  });
-});
 
     </script>
     
