@@ -1,5 +1,27 @@
 
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+
+var form = document.querySelector('#loginForm'); 
+form.addEventListener('submit', handleSubmit);
+
+
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  var usernameInput = document.getElementById('formGroupExampleInput');
+  var passwordInput = document.getElementById('formGroupExampleInput2');
+
+  if (usernameInput.value === 'admin')
+    window.location.href = '';
+  else if (usernameInput.value === 'user')
+    window.location.href = 'ClientHomePage.html';
+  else if (usernameInput.value === 'banker')
+    window.location.href = '';
+  else
+    alert('Invalid username or password');
+}
+
+/*document.getElementById("loginForm").add("submit", function(event) {
   event.preventDefault(); 
   
   if (validateForm()) {
@@ -21,18 +43,5 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
       alert("Please enter your password.");
       return false;
     }
-  
-    if (role === "") {
-      alert("Please select a role.");
-      return false;
-    }
-  
-    return true;
-  }
-  
 
-
-
-document.getElementById("Register").onclick = function(){
-    window.location.assign ( "register.html");
-};
+  */
