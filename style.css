@@ -883,3 +883,87 @@ input[type="file"]::file-selector-button {
     background-color: #81ecec;
     border: 2px solid #00cec9;
   }
+  #reminderButton {
+    display: none;
+    position: relative;
+  }
+  #reminderButton2 {
+    display: none;
+    position: relative;
+  }
+
+  .reminder {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #ededed;
+    color: #000;
+    transition: background-color 0.3s ease;
+    /* text-align: justify; */
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Serif", serif;
+    font-weight: 400;
+    font-size: 15px;
+  
+    border: 1px solid rgb(0, 0, 0);
+  
+    border-radius: 10px; 
+   
+  }
+  .zabat{
+     position: relative;
+    left: 85%;
+  }
+  
+  .reminder:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    background-color: #cbb26a;
+  
+  }
+  
+  #reminderButton:checked + .reminder {
+    background-color: #f5e90c;
+    color: #000000;
+  
+  }
+  #reminderButton2:checked + .reminder {
+    background-color: #f5e90c;
+    color: #000000;
+  
+  }
+  .reminder:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+    background-color: #cbb26a;
+  
+  }
+  
+  #reminderButton:checked + .reminder {
+    background-color: #e4de14;
+    color: #000000;
+  
+  }
+  
+  
+  #reminderButton:checked ~ .button-container {
+    display: block;
+  }
+  #reminderButton2:checked + .reminder {
+    background-color: #e4de14;
+    color: #000000;
+  
+  }
+  
+  
+  #reminderButton2:checked ~ .button-container {
+    display: block;
+  }
+  
+  .reminder img{
+    width:50%;
+  }
+  

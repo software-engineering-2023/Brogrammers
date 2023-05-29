@@ -20,10 +20,11 @@ function validate(){
   lastname=document.forms["form1"]["lastname"].value;
   email=document.forms["form1"]["email"].value;
   phone=document.forms["form1"]["phone"].value;
-  address=document.forms["form1"]["address"].value;
+  address=document.getElementById("address").value;
   username=document.forms["form1"]["Username"].value;
   password=document.forms["form1"]["password"].value;
   check=document.getElementById("supportCheckbox").checked
+  SSN=document.getElementById("SSN").value;
   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   var regex = /[,#-\/\s\!\@\$.....]/gi;
   if(firstname==""){
@@ -43,6 +44,11 @@ function validate(){
   }
   else if(phone.length != 11){
       alert("Invalid Phone number");
+  }else if(SSN.length==0){
+    alert("Please enter your SSN");
+  }
+  else if(SSN.length!=14){
+    alert("Your SSN should be 14 Number");
   }
   else if(address.length==0){
       alert("Please Enter your address");
@@ -188,12 +194,8 @@ function CheckApply(){
   }
 }
 function Report(){
-  const z = document.getElementById("report");
-  const RType = z.options[z.selectedIndex].text;
   const myTextarea = document.getElementById("w3review").value;
-  if(RType=="--Report Type--"){
-    alert("Choose the Type of Report");
-  }else if(myTextarea=="" || myTextarea.length<4){
+   if(myTextarea=="" || myTextarea.length<4){
     alert("Specify your Issue in Details ,So we can Help You");
   }else{
     alert("We have Recorded your Issue");
