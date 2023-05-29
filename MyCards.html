@@ -9,6 +9,10 @@
 </head>
 
 <body>
+
+
+
+
     <header>
         <div class="navBar">
             <div class="navImgPlus">
@@ -27,8 +31,19 @@
             </nav>
         </div>
     </header>
+    
+    <div class="userProfile">
+        <div class="userImage">
+          <img src="./resources/imgs/user.png" alt="User Image">
+        </div>
+        <div class="userInfo">
+          <h2>Dav17</h2>
+          <p>Platinum Account</p>
+        </div>
+    </div>
+      
 
-    <div class="container center3" >
+    <div class="container center3"  style="margin-top: 20px;">
 
         <div style="  display: flex;
         flex-wrap: wrap;
@@ -108,10 +123,21 @@
                     <h4>Current Usage: </h4>
                     <p>50000</p>
                 </div>
+
                 <div class="infoPartition">
                     <h4>Payment Due:</h4>
                     <p>01/02/2134</p>
+                    <input type="checkbox" id="reminderButton">
+                    <label for="reminderButton" class="reminder" >Set Reminder<img src="./resources/imgs/bell.png" alt="bell"> </label> 
+
                 </div>
+
+                <div class="infoPartition">
+                    <h4>Points Collected</h4>
+                    <p id="totPoints">1,233</p>
+                    <button  onclick="redeemer(this)"  class="redeemPts"  id="redeeem">  Redeem Points </button>
+                </div>
+
 
                 <div class="clr"></div>
             </div>
@@ -126,11 +152,39 @@
             <label for="toggleButton" class="toggle-label" >Manage</label>
           
             <div class="button-container">
-              <button id="button1" class="manageables lightUp">Report Loss</button>
-              <button id="button2" class="manageables lightUp">Cancel Card</button>
+              <button  id="reportBtn" class="manageables lightUp">Report Issue</button>
+              <button onclick="cancelReq()" id="button2" class="manageables lightUp">Cancel Card</button>
+
             </div>
             <!-- class="manageables" -->
         </div>
+          
+
+
+        <!-- <button id="reportBtn">Report Issue</button> -->
+
+        <div id="reportModal" class="modal" >
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Report Issue</h2>
+              <form id="reportForm">
+                <label for="issueType">Issue Type:</label>
+                <select id="issueType" name="issueType" required style="margin: 10px;"> 
+                  <option value="">Select Issue Type</option>
+                  <option value="theft">Theft</option>
+                  <option value="replacement">Replacement</option>
+                  <option value="loss">Loss</option>
+                </select>
+                <br>
+                <div id="replacementDetails" style="display: none;">
+                  <label for="deliveryAddress">Delivery Address:</label>
+                  <textarea required id="deliveryAddress" name="deliveryAddress"></textarea>
+                  <br>
+                </div>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
           
 
 
@@ -270,5 +324,71 @@
             </div>
         </div>
     </footer>
+
+
+    <script>
+      function redeemer(button) {
+        var pts = document.getElementById("totPoints");
+        pts.textContent= "0"
+        button.disabled = true;
+      }
+
+      function reportLoss() {
+      alert("The loss report has been sent successfully. The card have been temporarily disabled");
+    }
+
+    function cancelReq() {
+      alert("Cancel request have been sent successfully. The card have been temporarily disabled");
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+  var reportBtn = document.getElementById("reportBtn");
+  var reportModal = document.getElementById("reportModal");
+  var closeBtn = document.getElementsByClassName("close")[0];
+  var reportForm = document.getElementById("reportForm");
+
+  // Show modal when report button is clicked
+  reportBtn.addEventListener("click", function() {
+    reportModal.style.display = "block";
+  });
+
+  // Close the modal when close button is clicked
+  closeBtn.addEventListener("click", function() {
+    reportModal.style.display = "none";
+  });
+
+  // Close the modal when user clicks outside of it
+  window.addEventListener("click", function(event) {
+    if (event.target == reportModal) {
+      reportModal.style.display = "none";
+    }
+  });
+
+  // Handle form submission
+  reportForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Add your code to handle form submission here
+    // You can use AJAX or submit the form data to a server
+    // using the fetch API or any other method of your choice
+    // Once the form is submitted, you can close the modal
+    reportModal.style.display = "none";
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  var issueTypeSelect = document.getElementById("issueType");
+  var replacementDetailsDiv = document.getElementById("replacementDetails");
+
+  issueTypeSelect.addEventListener("change", function() {
+    if (issueTypeSelect.value === "replacement") {
+      replacementDetailsDiv.style.display = "block";
+    } else {
+      replacementDetailsDiv.style.display = "none";
+    }
+  });
+});
+
+
+    </script>
 </body>
 </html>
