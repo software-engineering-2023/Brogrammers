@@ -12,14 +12,16 @@ function handleSubmit(event) {
   var passwordInput = document.getElementById('formGroupExampleInput2');
 
   if (usernameInput.value === 'admin')
-    window.location.href = '';
+    window.location.href = 'AdminHome.html';
   else if (usernameInput.value === 'user')
     window.location.href = 'ClientHomePage.html';
   else if (usernameInput.value === 'banker')
-    window.location.href = '';
+    window.location.href = 'bankerHome.html';
   else
     alert('Invalid username or password');
 }
+
+
 
 /*document.getElementById("loginForm").add("submit", function(event) {
   event.preventDefault(); 
