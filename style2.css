@@ -1165,3 +1165,46 @@ button[type="submit"]:hover {
 #replacementDetails textarea {
   height: 100px;
 }
+
+
+
+/* Styles for the payment modal */
+#paymentModal .modal-content {
+  background-color: #f9f9f9;
+}
+
+#paymentModal h2 {
+  color: #333;
+}
+
+#paymentModal label {
+  color: #555;
+}
+
+#paymentModal input[type="number"],
+#paymentModal button[type="submit"] {
+  background-color: #cbb26a;
+  color: #000000;
+  margin: 5px;
+}
+
+#paymentModal input[type="number"]::-webkit-inner-spin-button,
+#paymentModal input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#paymentModal input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+#paymentModal input[type="number"]::-webkit-input-placeholder {
+  color: #999;
+}
+
+#paymentModal input[type="number"]::-moz-placeholder {
+  color: #999;
+}
+
+
