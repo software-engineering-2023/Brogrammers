@@ -49,7 +49,7 @@
                         <p>Bill Nye the Science Guy</p>
                     </div>
                     <div class="infoPartitionbutt">
-                        <button>Change Name</button>
+                        <button id="change_name">Change Name</button>
                     </div>
                     <div class="clr"></div>
                 </div>
@@ -59,7 +59,7 @@
                         <p>01222235455</p>
                     </div>
                     <div class="infoPartitionbutt">
-                        <button>Change Phone number</button>
+                        <button id="change_number">Change Phone number</button>
                     </div>
                     <div class="clr"></div>
                 </div>
@@ -70,7 +70,7 @@
                         <p> Manchester Road 123-78B</p>
                     </div>
                     <div class="infoPartitionbutt">
-                        <button>Change Address</button>
+                        <button id="change_address">Change Address</button>
                     </div>
                     <div class="clr"></div>
                 </div>
@@ -108,9 +108,29 @@
                 be transfered to the desired account.</p>
         </div>
         <div class="close_button">
-            <button>REQUEST TO CLOSE ACCOUNT</button>
+            <button id="closeReq">REQUEST TO CLOSE ACCOUNT</button>
         </div>
     </div>
+
+    <script>
+        const button = document.getElementById('closeReq');
+        const button1 = document.getElementById('change_address');
+        const button2 = document.getElementById('change_number');
+        const button3 = document.getElementById('change_name');
+
+        // Function to handle button click event
+        function showAlert() {
+            const message = 'your request was recieved. A representative will contact you shortly';
+
+            // Show the alert box with the custom message
+            alert(message);
+        }
+
+        // Attach the click event listener to the button
+        button.addEventListener('click', showAlert);
+        button1.addEventListener('click', showAlert);
+        button2.addEventListener('click', showAlert);
+        button3.addEventListener('click', showAlert);</script>
     <!-- Footer Starts here -->
     </div>
     <footer>

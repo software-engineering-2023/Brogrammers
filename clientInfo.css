@@ -14,9 +14,7 @@
 /* body {
   height: 300vh;
 } */
-button:hover {
-  cursor: pointer;
-}
+
 header {
   background: #52c234; /* fallback for old browsers */
 
@@ -230,88 +228,115 @@ header {
   width: 100%;
 }
 .allInfo {
+  float: left;
   padding: 20 50 0;
-  width: 100%;
+  width: 70%;
+}
+.YourLoans {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 30px;
+  color: #cbb26a;
+  position: relative;
+  text-align: left;
+  right: 400;
+  padding: 35;
+}
+.LoanInfo {
+  float: left;
+  padding: 30;
+  width: 25%;
+  text-align: center;
+  padding: auto;
+  position: relative;
+  left: 230;
+}
+.LoanInfo h4 {
+  font-family: "Roboto Serif";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  color: #cbb26a;
+  text-align: center;
+  padding: auto;
 }
 .infoPartition {
-  text-align: left;
-  padding: 30 25;
-  width: 100%;
+  float: left;
+  padding: 30;
+  width: 25%;
 }
 .infoPartition h4 {
   font-family: "Roboto Serif";
   font-style: normal;
-  font-size: 23px;
+  font-size: 16px;
   font-weight: bold;
   color: #cbb26a;
+  padding: 10;
 }
-.infoPartitionText {
-  float: left;
-}
-.infoPartitionButt {
-  float: right;
-}
-.infoPartitionButt button {
-  padding: 20px;
-  width: 200;
-  font-family: "Roboto Serif";
-  font-style: normal;
-  font-size: 13px;
-  font-weight: 400;
+.AccountDetailsPlus {
+  width: 90%;
+  margin: 0 auto 30;
+  padding: 1%;
+  
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 50px;
 }
 
 /* Acount Details END */
-
-/* close account start */
-.closeAccount {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding: 40px;
+.padding {
+  padding: 30;
 }
-.close_text {
-  margin: auto;
+/* Possible Actions Start */
+.PossibleActions {
   width: 90%;
-  padding-bottom: 40px;
-  font-family: "Roboto Serif";
-  font-style: normal;
-  font-size: 25px;
-  font-weight: 400;
-  color: red;
+  margin: 20 auto;
 }
-.warning {
-  padding-top: 25px;
-  font-family: "Roboto Serif";
-  font-style: normal;
-  font-size: 12px;
-  font-weight: 400;
-  color: red;
-  display: hidden;
+.doable {
+  background-color: #ededed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid #cbb26a;
+  border-radius: 35px;
+  float: left;
+  width: 14.2%;
+  height: 150px;
+  margin: 40 20 60 20;
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
-.black {
+.doable a {
+  text-decoration: none;
   color: black;
-  padding-top: 25px;
+}
+.innerIcon {
+  width: 40%;
+  margin: auto;
+}
+.doable img {
+  width: 100%;
+  padding: 15px;
+}
+.innerContainer {
+  margin-top: 10px;
+}
+.doable p {
   font-family: "Roboto Serif";
   font-style: normal;
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 15px;
 }
-.close_button button {
-  width: 250;
-  padding: 25px;
-  font-family: "Roboto Serif";
-  font-style: normal;
-  font-size: 12px;
-  font-weight: bold;
-  color: red;
-  opacity: 60%;
-  display: hidden;
-  border: 1px black solid;
+.doableContainer {
+  width: 100%;
+  margin: 0 0 0 0;
 }
-.close_button button:hover {
-  opacity: 1;
-  cursor: pointer;
+
+.doable:hover {
+  transform: translate(15px, 15px);
 }
+
+/* Possible Actions END */
 
 /* Body End */
 
@@ -463,6 +488,17 @@ header {
   font-family: "Roboto Serif", serif;
   font-weight: 400;
 }
+.flexMe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: fit-content;
+  min-height: 500px;
+  margin: auto;
+  border: #050f08;
+  justify-content: center;
+  align-items: flex-start;
+}
 /* Footer end */
 /* Media Queries */
 /* @media only screen and (max-width: 600px) {
@@ -479,7 +515,7 @@ header {
 } */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .doable {
     width: 100%;
   }
@@ -493,10 +529,10 @@ header {
   .AccountDetails .img {
     width: 100%;
   }
-} */
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-/* @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .doable {
     width: 50%;
   }
@@ -510,10 +546,10 @@ header {
   .AccountDetails .img {
     width: 50%;
   }
-} */
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   .doable {
     width: 50%;
   }
@@ -530,10 +566,10 @@ header {
   .row {
     width: 10%;
   }
-} */
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .doable {
     width: 25%;
   }
@@ -579,5 +615,5 @@ header {
   }
   .row {
     width: 22%;
-  } */
-/* } */
+  }
+}
