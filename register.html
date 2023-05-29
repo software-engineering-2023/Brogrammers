@@ -1,176 +1,121 @@
 <!DOCTYPE html>
 <link href="style1.css" rel="stylesheet" type="text/css">
 <html>
+
 <head>
-    <title>Register</title>
+  <title>Register</title>
 </head>
+
 <body style=" background-image: linear-gradient(
     to right,
     #12370f,
     #1f5f1a
-  );"">
-    <form method="post" id="form1">
+  );">
+  <form method="post" id="form1">
     <div class="formbold-main-wrapper">
-        <div class="formbold-form-wrapper">
-            <div class="formbold-form-title">
-              <h2 class="">Register</h2>
-                
-            </div>
-      
-            <div class="formbold-input-flex">
-              <div>
-                <label for="firstname" class="formbold-form-label"> 
-                  First name
-                  <span class="req">*</span></label>
-                </label>
-                <input
-                  type="text" 
-                  name="firstname"
-                  id="firstname"
-                  class="formbold-form-input"
-                  required
-                  placeholder="Enter your Firstname"
-                />
-               
-              </div>
-              <div>
-                <label for="lastname" class="formbold-form-label"> Last name  <span class="req">*</span></label>
-                <input
-                  type="text"
-                  name="lastname"
-                  id="lastname"
-                  class="formbold-form-input"
-                  required
-                  placeholder="Enter your Lastname"
-                />
-                
-                
-              </div>
-            </div>
-      
-            <div class="formbold-input-flex">
-              <div>
-                <label for="email" class="formbold-form-label"> Email <span class="req">*</span> </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  class="formbold-form-input"
-                  required
-                  placeholder="Ex: Example@gmail.com"
-                />
-                
-              </div>
-              <div>
-                <label for="phone" class="formbold-form-label"> Phone number <span class="req">*</span></label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  class="formbold-form-input"
-                  required
-                  placeholder="Ex: 01234567890"
-                />
-                
-              </div>
-            </div>
-            <div class="formbold-mb-3">
-                <label for="address" class="formbold-form-label">
-                  Social Security Number
-                  <span class="req">*</span>
-                </label>
-                <input
-                  type="number"
-                  name="address"
-                  id="SSN"
-                  class="formbold-form-input"
-                  required
-                  placeholder="Enter your SSN"
-                />
-                <div style="padding: 5px;"></div>
-            <div class="formbold-mb-3">
-              <label for="address" class="formbold-form-label">
-                Street Address
-                <span class="req">*</span>
+      <div class="formbold-form-wrapper">
+        <div class="formbold-form-title">
+          <h2 class="">Register</h2>
+
+        </div>
+
+        <div class="formbold-input-flex">
+          <div>
+            <label for="firstname" class="formbold-form-label"> 
+              First name
+              <span class="req">*</span></label>
+            </label>
+            <input type="text" name="firstname" id="firstname" class="formbold-form-input" required
+              placeholder="Enter your Firstname" />
+
+          </div>
+          <div>
+            <label for="lastname" class="formbold-form-label"> Last name <span class="req">*</span></label>
+            <input type="text" name="lastname" id="lastname" class="formbold-form-input" required
+              placeholder="Enter your Lastname" />
+
+
+          </div>
+        </div>
+
+        <div class="formbold-input-flex">
+          <div>
+            <label for="email" class="formbold-form-label"> Email <span class="req">*</span> </label>
+            <input type="email" name="email" id="email" class="formbold-form-input" required
+              placeholder="Ex: Example@gmail.com" />
+
+          </div>
+          <div>
+            <label for="phone" class="formbold-form-label"> Phone number <span class="req">*</span></label>
+            <input type="tel" name="phone" id="phone" class="formbold-form-input" required
+              placeholder="Ex: 01234567890" />
+
+          </div>
+        </div>
+        <div class="formbold-mb-3">
+          <label for="address" class="formbold-form-label">
+            Social Security Number
+            <span class="req">*</span>
+          </label>
+          <input type="number" name="address" id="SSN" class="formbold-form-input" required
+            placeholder="Enter your SSN" />
+          <div style="padding: 5px;"></div>
+          <div class="formbold-mb-3">
+            <label for="address" class="formbold-form-label">
+              Street Address
+              <span class="req">*</span>
+            </label>
+            <input type="text" name="address" id="address" class="formbold-form-input" required
+              placeholder="Ex: 1 Port Said Street" />
+
+          </div>
+          <div class="formbold-input-flex">
+            <div>
+              <label for="Username" class="formbold-form-label">
+                Username
+                <span class="req">*</span></label>
               </label>
-              <input
-                type="text"
-                name="address"
-                id="address"
-                class="formbold-form-input"
-                required
-                placeholder="Ex: 1 Port Said Street"
-              />
-              
-            </div>
-            <div class="formbold-input-flex">
-                <div>
-                  <label for="Username" class="formbold-form-label">
-                    Username
-                    <span class="req">*</span></label>
-                  </label>
-                  <input
-                    type="text" 
-                    name="Username"
-                    id="Username"
-                    class="formbold-form-input"
-                    required
-                    placeholder="Enter your Username"
-                  />
-                
-                </div>
-                <div>
-                  <label for="Password" class="formbold-form-label"> Password <span class="req">*</span></label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    class="formbold-form-input"
-                    required
-                    placeholder="Enter your Password"
-                  />
-                 
-                </div>
-              </div>
-      
-            
-            <div class="formbold-checkbox-wrapper">
-              <label for="supportCheckbox" class="formbold-checkbox-label">
-                <div class="formbold-relative">
-                  <input
-                    type="checkbox"
-                    id="supportCheckbox"
-                    class="formbold-input-checkbox" required
-                  />
-                  <div class="formbold-checkbox-inner">
-                    <span class="formbold-opacity-0">
-                     <svg
-                        width="11"
-                        height="8"
-                        viewBox="0 0 11 8"
-                        fill="absolute"
-                        class="formbold-stroke-current"
-                      >
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                I agree to the defined
-                <a href=""> terms, conditions, and policies</a>
-                <span class="req"> *</span>
-              </label>
-              
+              <input type="text" name="Username" id="Username" class="formbold-form-input" required
+                placeholder="Enter your Username" />
+
             </div>
             <div>
+              <label for="Password" class="formbold-form-label"> Password <span class="req">*</span></label>
+              <input type="password" name="password" id="password" class="formbold-form-input" required
+                placeholder="Enter your Password" />
+
+            </div>
+          </div>
+
+
+          <div class="formbold-checkbox-wrapper">
+            <label for="supportCheckbox" class="formbold-checkbox-label">
+              <div class="formbold-relative">
+                <input type="checkbox" id="supportCheckbox" class="formbold-input-checkbox" required />
+                <div class="formbold-checkbox-inner">
+                  <span class="formbold-opacity-0">
+                    <svg width="11" height="8" viewBox="0 0 11 8" fill="absolute" class="formbold-stroke-current">
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              I agree to the defined
+              <a href=""> terms, conditions, and policies</a>
+              <span class="req"> *</span>
+            </label>
+
+          </div>
+          <div>
             <button id="btn1" type="submit" onclick="validate()" class="formbold-btn">Register
             </button>
-             </div>
+          </div>
 
-            
-             
+
+
         </div>
       </div>
-    </form>
-    <script src="script1.js"></script>  
+  </form>
+  <script src="script1.js"></script>
 </body>
+
 </html>
